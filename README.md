@@ -14,23 +14,6 @@ Site estático com os dois documentos da identidade visual da **Tech Date** — 
 
 Cada HTML é independente: o CSS e o JavaScript ficam dentro dele. As fontes vêm do Google Fonts, então a página precisa de internet para aparecer com a tipografia certa.
 
-## Antes do primeiro commit: deixe seu e-mail privado
-
-O e-mail configurado no Git fica visível no histórico de um repositório público. Para publicar com o endereço anônimo do GitHub:
-
-1. No GitHub, clique na sua foto → **Settings** → **Emails**.
-2. Marque **Keep my email addresses private** e **Block command line pushes that expose my email**. Nessa mesma tela aparece o seu endereço anônimo, no formato `12345678+SEU-USUARIO@users.noreply.github.com`.
-3. No computador, rode uma vez (trocando pelo endereço que apareceu no passo 2):
-
-   ```bash
-   git config --global user.email "12345678+SEU-USUARIO@users.noreply.github.com"
-   git config --global user.name "Seu Nome"
-   ```
-
-4. Confira com `git config --global user.email`.
-
-Quem envia os arquivos pela própria página do GitHub (**Add file → Upload files**) já usa o endereço anônimo automaticamente depois do passo 2. Commits feitos antes disso continuam com o e-mail antigo gravado no histórico.
-
 ## Direitos de uso
 
 Este repositório é público para facilitar a consulta, não para liberar o uso da marca. O nome Tech Date, o logo, o símbolo Grade Viva, os ícones, os elementos gráficos, as peças, os textos e o código são da Tech Date e não podem ser usados, copiados, adaptados ou redistribuídos sem autorização por escrito. Condições completas em [LICENSE.md](LICENSE.md).
