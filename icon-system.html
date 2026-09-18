@@ -1,0 +1,4914 @@
+<!doctype html>
+<html lang="pt-BR">
+<!--
+  Tech Date · Icon & Visual System · v1.1 · setembro de 2026
+  © 2026 Tech Date. Todos os direitos reservados.
+
+  Documento público apenas para consulta. O nome Tech Date, o logo, o símbolo Grade Viva,
+  os ícones, os elementos gráficos, as peças, os textos e este código não podem ser usados,
+  copiados, adaptados ou redistribuídos sem autorização por escrito da Tech Date.
+  Condições completas em LICENSE.md. Pessoas, parceiros, eventos, comunidades, perfis,
+  sites e e-mails dos exemplos são fictícios.
+-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Tech Date · Icon & Visual System</title>
+  <meta name="description" content="Catálogo do símbolo Grade Viva da Tech Date: processo, matriz de variações, ícones de categoria, combinações de cor e elementos gráficos.">
+  <meta name="author" content="Tech Date">
+  <meta name="copyright" content="© 2026 Tech Date. Todos os direitos reservados. Público apenas para consulta.">
+  <meta name="theme-color" content="#F7F3EA">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Tech Date · Icon & Visual System">
+  <meta property="og:description" content="Catálogo do símbolo Grade Viva da Tech Date: processo, matriz de variações, ícones de categoria, combinações de cor e elementos gráficos.">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 52 52'%3E%3Crect x='5' y='7' width='42' height='42' rx='10' fill='none' stroke='%232E4BFF' stroke-width='3.4'/%3E%3Cpath d='M17.3 5.6v5M34.7 5.6v5' stroke='%232E4BFF' stroke-width='4' stroke-linecap='round'/%3E%3Cg fill='%232E4BFF' fill-opacity='.4'%3E%3Crect x='14' y='20' width='7.4' height='7.2' rx='1.7'/%3E%3Crect x='25.4' y='20' width='7.4' height='7.2' rx='1.7'/%3E%3Crect x='14' y='31.2' width='7.4' height='7.2' rx='1.7'/%3E%3C/g%3E%3Ccircle cx='32.5' cy='34.6' r='6.2' fill='%232E4BFF'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=League+Spartan:wght@500;600;700;800&display=swap">
+  <style>
+/* =============================================================================
+   TECH DATE · ICON & VISUAL SYSTEM · ESTILOS
+   -----------------------------------------------------------------------------
+   © 2026 Tech Date. Todos os direitos reservados. Uso restrito: veja LICENSE.md.
+   
+   1. Tokens, base e componentes da marca (cores, fontes, selo, botão de seta)
+   2. Peças: post de Instagram, story no celular, crachá
+   3. Interface do site: barra superior, menu de seções, copiar
+   4. Seções do documento
+   5. Ajustes responsivos (celular, tablet, monitores grandes)
+   6. Impressão
+   ============================================================================= */
+
+/* =============================================================================
+   1. TOKENS, BASE E COMPONENTES DA MARCA
+   ============================================================================= */
+
+:root {
+  --blue: #2E4BFF;
+  --deep: #0305C6;
+  --ink: #0B0B0F;
+  --sand: #F7F3EA;
+  --white: #FFFFFF;
+  --blue-40: rgba(46, 75, 255, 0.4);
+  --blue-10: rgba(46, 75, 255, 0.09);
+  --ink-70: rgba(11, 11, 15, 0.72);
+  --ink-50: rgba(11, 11, 15, 0.54);
+  --ink-15: rgba(11, 11, 15, 0.14);
+  --ink-08: rgba(11, 11, 15, 0.07);
+  --w-70: rgba(255, 255, 255, 0.74);
+  --w-50: rgba(255, 255, 255, 0.55);
+  --w-15: rgba(255, 255, 255, 0.15);
+  --w-08: rgba(255, 255, 255, 0.08);
+  --fd: "League Spartan", "Futura", "Avenir Next", "Trebuchet MS", system-ui, sans-serif;
+  --fb: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --fm: "JetBrains Mono", ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+  color-scheme: light;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 76px;
+  background: var(--sand);
+}
+body {
+  margin: 0;
+  background: var(--sand);
+  color: var(--ink);
+  font: 400 16px/1.6 var(--fb);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+ul,
+ol,
+dl,
+dd,
+blockquote {
+  margin: 0;
+}
+ul,
+ol {
+  padding: 0;
+  list-style: none;
+}
+a {
+  color: inherit;
+}
+:focus-visible {
+  outline: 2px solid var(--blue);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+/* layout */
+.wrap {
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: clamp(16px, 4vw, 48px);
+}
+.sec {
+  position: relative;
+  padding-block: clamp(64px, 9vw, 128px);
+}
+.sec--white {
+  background-color: var(--white);
+}
+.sec--ink {
+  background-color: var(--ink);
+  color: var(--white);
+}
+.sec--deep {
+  background-color: var(--deep);
+  color: var(--white);
+}
+.dots {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.16) 1px, transparent 1.3px);
+  background-size: 22px 22px;
+}
+.dots-i {
+  background-image: radial-gradient(rgba(11, 11, 15, 0.13) 1px, transparent 1.3px);
+  background-size: 22px 22px;
+}
+.g {
+  display: grid;
+  gap: clamp(16px, 2.4vw, 28px);
+}
+.stack {
+  display: grid;
+  gap: clamp(20px, 3vw, 36px);
+}
+.sub {
+  margin-top: clamp(48px, 7vw, 88px);
+}
+
+/* type */
+.eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font: 500 12px/1 var(--fm);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--blue);
+}
+.eyebrow .n {
+  display: inline-grid;
+  place-items: center;
+  min-width: 30px;
+  height: 22px;
+  padding: 0 7px;
+  border-radius: 99px;
+  background: var(--blue);
+  color: #FFF;
+  letter-spacing: 0;
+}
+.sec--ink .eyebrow,
+.sec--deep .eyebrow {
+  color: var(--w-70);
+}
+.sec--deep .eyebrow .n {
+  background: #FFF;
+  color: var(--deep);
+}
+.h1 {
+  font: 800 clamp(60px, 12vw, 168px)/0.84 var(--fd);
+  letter-spacing: -0.04em;
+}
+.h2 {
+  font: 700 clamp(36px, 5.6vw, 68px)/0.96 var(--fd);
+  letter-spacing: -0.028em;
+  text-wrap: balance;
+}
+.h3 {
+  font: 700 clamp(23px, 2.5vw, 30px)/1.05 var(--fd);
+  letter-spacing: -0.015em;
+  text-wrap: balance;
+}
+.h4 {
+  font: 600 13px/1.2 var(--fm);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.lede {
+  font-size: clamp(17px, 1.7vw, 20px);
+  line-height: 1.55;
+  color: var(--ink-70);
+  max-width: 62ch;
+}
+.body {
+  color: var(--ink-70);
+  max-width: 64ch;
+}
+.sec--ink .lede,
+.sec--deep .lede,
+.sec--ink .body,
+.sec--deep .body {
+  color: var(--w-70);
+}
+.sh {
+  display: grid;
+  gap: 20px;
+  max-width: 860px;
+  margin-bottom: clamp(40px, 6vw, 72px);
+}
+.mono {
+  font-family: var(--fm);
+}
+.blue {
+  color: var(--blue);
+}
+.cap {
+  font: 500 12px/1.45 var(--fm);
+  color: var(--ink-50);
+  letter-spacing: 0.02em;
+}
+.sec--ink .cap,
+.sec--deep .cap {
+  color: var(--w-50);
+}
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font: 500 11px/1 var(--fm);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 7px 11px;
+  border-radius: 99px;
+  border: 1px solid currentColor;
+  white-space: nowrap;
+}
+.chip--solid {
+  background: var(--blue);
+  border-color: var(--blue);
+  color: #FFF;
+}
+.chip--ink {
+  background: var(--ink);
+  border-color: var(--ink);
+  color: #FFF;
+}
+
+/* "o que é isso?" */
+.def {
+  position: relative;
+  display: block;
+  font-size: 14.5px;
+  line-height: 1.55;
+  color: var(--ink-70);
+  max-width: 72ch;
+  padding: 13px 16px 13px 48px;
+  border-radius: 14px;
+  background: var(--blue-10);
+}
+.def::before {
+  content: "?";
+  position: absolute;
+  left: 14px;
+  top: 13px;
+  display: grid;
+  place-items: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--blue);
+  color: #FFF;
+  font: 700 12px/1 var(--fm);
+}
+.def b {
+  color: var(--ink);
+  font-weight: 600;
+}
+.sec--ink .def,
+.sec--deep .def {
+  background: var(--w-08);
+  color: var(--w-70);
+}
+.sec--ink .def b,
+.sec--deep .def b {
+  color: #FFF;
+}
+.sec--deep .def::before {
+  background: #FFF;
+  color: var(--deep);
+}
+
+/* icons */
+.ic,
+.gv {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  flex: none;
+  line-height: 0;
+}
+.ic svg,
+.gv svg,
+.sq svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+/* logo oficial (tag em cima, nome embaixo) */
+.wm {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-family: var(--fd);
+  font-weight: 800;
+  color: var(--blue);
+  line-height: 1;
+  font-size: var(--s, 56px);
+  --fr: currentColor;
+}
+.wm .tg {
+  font-weight: 700;
+  font-size: 0.52em;
+  line-height: 0.8;
+  letter-spacing: -0.005em;
+  margin: 0 0 0.02em 0.02em;
+}
+.wm .mn {
+  display: inline-block;
+  white-space: nowrap;
+  line-height: 0.78;
+  letter-spacing: -0.012em;
+}
+.wm .ga {
+  display: inline-block;
+  width: 0.571em;
+  height: 0.571em;
+  vertical-align: -0.031em;
+  margin: 0 0.033em 0 0.026em;
+}
+.wm-ink {
+  color: var(--ink);
+}
+.wm-white {
+  color: #FFF;
+}
+
+/* direitos de uso (rodapé) */
+.legal {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+  gap: 10px clamp(24px, 4vw, 56px);
+  margin-top: clamp(36px, 5vw, 56px);
+  padding-top: 22px;
+  border-top: 1px solid var(--w-15);
+  font-size: 12.5px;
+  line-height: 1.6;
+  color: var(--w-70);
+}
+@media (max-width: 860px) {
+  .legal {
+    grid-template-columns: 1fr;
+  }
+}
+.legal b {
+  color: #FFF;
+  font-weight: 600;
+}
+
+/* social components */
+.seal {
+  display: inline-grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--blue);
+  color: #FFF;
+  flex: none;
+}
+.seal--ink {
+  background: var(--ink);
+}
+.seal--white {
+  background: #FFF;
+  color: var(--blue);
+}
+.seal--sand {
+  background: var(--sand);
+  color: var(--blue);
+}
+.cta {
+  display: inline-grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--blue);
+  color: #FFF;
+  flex: none;
+}
+.sq {
+  position: absolute;
+  pointer-events: none;
+  line-height: 0;
+}
+
+/* =============================================================================
+   2. PEÇAS: POST, STORY E CRACHÁ
+   ============================================================================= */
+
+/* ---------- post de feed 4:5 (tudo em cqw: escala sozinho) ---------- */
+.ig {
+  container-type: inline-size;
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4/5;
+  overflow: hidden;
+  border-radius: 12px;
+  background: var(--sand);
+  color: var(--ink);
+  isolation: isolate;
+  box-shadow: 0 0 0 1px var(--ink-08);
+}
+.ig--white {
+  background: #FFF;
+}
+.ig--ink {
+  background: var(--ink);
+  color: #FFF;
+}
+.ig--deep {
+  background: var(--deep);
+  color: #FFF;
+}
+.ig .in {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 7.4cqw;
+  z-index: 2;
+}
+.ig .top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3cqw;
+}
+.ig .seal {
+  width: 12.5cqw;
+  height: 12.5cqw;
+  font-size: 6.2cqw;
+}
+.ig .wm {
+  --s: 7.8cqw;
+}
+.ig .k {
+  font: 600 2.9cqw/1.25 var(--fm);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.ig .t {
+  font: 700 9.4cqw/0.95 var(--fd);
+  letter-spacing: -0.025em;
+  text-wrap: balance;
+}
+.ig .t em,
+.scr .t em {
+  font-style: normal;
+  color: var(--blue);
+}
+.ig .p {
+  font: 400 3.7cqw/1.42 var(--fb);
+  opacity: 0.84;
+}
+.ig .meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.8cqw 4.2cqw;
+  font: 500 3cqw/1.25 var(--fm);
+}
+.ig .meta span {
+  display: inline-flex;
+  align-items: center;
+  gap: 1.4cqw;
+}
+.ig .meta .ic {
+  font-size: 3.7cqw;
+}
+.ig .bot {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 3.4cqw;
+  margin-top: auto;
+}
+.ig .cta {
+  width: 12.5cqw;
+  height: 12.5cqw;
+  font-size: 5.8cqw;
+}
+.ig .hd {
+  font: 500 2.8cqw/1 var(--fm);
+  opacity: 0.6;
+}
+.ig .sq {
+  right: -5cqw;
+  bottom: -4cqw;
+  width: 50cqw;
+  height: 34cqw;
+  z-index: 1;
+}
+.pl {
+  display: inline-flex;
+  align-items: center;
+  gap: 1.4cqw;
+  font: 600 2.9cqw/1 var(--fm);
+  letter-spacing: 0.04em;
+  padding: 2cqw 3cqw;
+  border-radius: 99px;
+  border: 0.3cqw solid currentColor;
+  white-space: nowrap;
+}
+.pl--fill {
+  background: var(--blue);
+  border-color: var(--blue);
+  color: #FFF;
+}
+.pl--ink {
+  background: var(--ink);
+  border-color: var(--ink);
+  color: #FFF;
+}
+.gap1 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.8cqw;
+}
+.mt1 {
+  margin-top: 2.4cqw;
+}
+.mt2 {
+  margin-top: 4.4cqw;
+}
+.mt3 {
+  margin-top: 7cqw;
+}
+.mta {
+  margin-top: auto;
+}
+
+/* legenda */
+.post {
+  display: grid;
+  gap: 14px;
+  align-content: start;
+}
+.post figcaption {
+  display: grid;
+  gap: 6px;
+  font-size: 13.5px;
+  line-height: 1.5;
+  color: var(--ink-70);
+}
+.post figcaption .ty {
+  font: 500 11px/1 var(--fm);
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--blue);
+}
+.post figcaption b {
+  color: var(--ink);
+  font-weight: 600;
+}
+.post figcaption .hs {
+  color: var(--blue);
+}
+
+/* calendário do mês */
+.mg {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 1.25cqw;
+  font: 500 2.7cqw/1 var(--fm);
+}
+.mg b {
+  font-weight: 600;
+  text-align: center;
+  opacity: 0.45;
+  padding-bottom: 0.6cqw;
+}
+.mg i {
+  font-style: normal;
+  aspect-ratio: 1;
+  display: grid;
+  place-items: center;
+  border-radius: 1.6cqw;
+  background: var(--blue-10);
+}
+.mg i.ev {
+  background: var(--blue);
+  color: #FFF;
+  border-radius: 50%;
+  font-weight: 700;
+}
+.mg i.x {
+  background: none;
+}
+
+/* carrossel */
+.carousel {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(232px, 1fr);
+  gap: 14px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 12px;
+  scrollbar-width: thin;
+}
+.carousel > * {
+  scroll-snap-align: start;
+}
+.ig .cnt {
+  font: 600 2.8cqw/1 var(--fm);
+  padding: 1.6cqw 2.6cqw;
+  border-radius: 99px;
+  background: var(--ink-08);
+}
+.ig--ink .cnt,
+.ig--deep .cnt {
+  background: var(--w-15);
+}
+.ig .big {
+  font: 800 30cqw/0.8 var(--fd);
+  letter-spacing: -0.05em;
+}
+
+/* ---------- story em celular ---------- */
+.phone {
+  container-type: inline-size;
+  width: 100%;
+  max-width: 290px;
+  margin-inline: auto;
+  padding: 8px;
+  border-radius: 40px;
+  background: var(--ink);
+  box-shadow: 0 26px 50px -26px rgba(11, 11, 15, 0.55);
+}
+.scr {
+  position: relative;
+  aspect-ratio: 9/17.4;
+  border-radius: 32px;
+  overflow: hidden;
+  background: var(--sand);
+  color: var(--ink);
+  isolation: isolate;
+}
+.st--white {
+  background: #FFF;
+}
+.st--ink {
+  background: var(--ink);
+  color: #FFF;
+}
+.st--deep {
+  background: var(--deep);
+  color: #FFF;
+}
+.scr .ui {
+  position: absolute;
+  inset: 0 0 auto;
+  padding: 3.6cqw 4.2cqw 0;
+  z-index: 6;
+}
+.scr .bars {
+  display: flex;
+  gap: 1cqw;
+}
+.scr .bars i {
+  flex: 1;
+  height: 0.7cqw;
+  border-radius: 1cqw;
+  background: currentColor;
+  opacity: 0.25;
+}
+.scr .bars i.on {
+  opacity: 0.9;
+}
+.scr .who {
+  display: flex;
+  align-items: center;
+  gap: 2.2cqw;
+  margin-top: 2.8cqw;
+  font: 600 3.4cqw/1 var(--fb);
+}
+.scr .who .av {
+  display: grid;
+  place-items: center;
+  width: 7.6cqw;
+  height: 7.6cqw;
+  border-radius: 50%;
+  background: var(--sand);
+  color: var(--blue);
+  font-size: 5.2cqw;
+  box-shadow: 0 0 0 0.5cqw rgba(255, 255, 255, 0.6);
+}
+.scr .who small {
+  font-weight: 400;
+  font-size: 3.2cqw;
+  opacity: 0.6;
+}
+.scr .sbody {
+  position: absolute;
+  inset: 19cqw 7.4cqw 22cqw;
+  display: flex;
+  flex-direction: column;
+  z-index: 4;
+}
+.scr .reply {
+  position: absolute;
+  inset: auto 0 0;
+  display: flex;
+  align-items: center;
+  gap: 3.6cqw;
+  padding: 0 4.6cqw 5cqw;
+  z-index: 6;
+}
+.scr .reply span {
+  flex: 1;
+  border: 0.35cqw solid currentColor;
+  border-radius: 99px;
+  padding: 2.8cqw 4.2cqw;
+  font: 400 3.3cqw/1 var(--fb);
+  opacity: 0.62;
+}
+.scr .reply .ic {
+  font-size: 6.2cqw;
+}
+.scr .seal {
+  width: 13.5cqw;
+  height: 13.5cqw;
+  font-size: 6.8cqw;
+}
+.scr .t {
+  font: 700 10.6cqw/0.95 var(--fd);
+  letter-spacing: -0.028em;
+  text-wrap: balance;
+}
+.scr .p {
+  font: 400 4.1cqw/1.42 var(--fb);
+  opacity: 0.84;
+}
+.scr .k {
+  font: 600 3.3cqw/1.2 var(--fm);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.scr .meta {
+  display: grid;
+  gap: 2.2cqw;
+  font: 500 3.5cqw/1.25 var(--fm);
+}
+.scr .meta span {
+  display: flex;
+  align-items: center;
+  gap: 2cqw;
+}
+.scr .meta .ic {
+  font-size: 4.4cqw;
+}
+.scr .sq {
+  right: -8cqw;
+  bottom: 13cqw;
+  width: 74cqw;
+  height: 50cqw;
+  z-index: 3;
+}
+.stk {
+  background: #FFF;
+  color: var(--ink);
+  border-radius: 5cqw;
+  padding: 4.6cqw;
+  box-shadow: 0 2.4cqw 7cqw rgba(11, 11, 15, 0.2);
+}
+.lk {
+  display: inline-flex;
+  align-items: center;
+  gap: 2.6cqw;
+  align-self: flex-start;
+  background: #FFF;
+  color: var(--blue);
+  border-radius: 99px;
+  padding: 1.8cqw 1.8cqw 1.8cqw 4.6cqw;
+  font: 600 3.7cqw/1 var(--fb);
+  box-shadow: 0 2cqw 6cqw rgba(11, 11, 15, 0.18);
+}
+.lk .cta {
+  width: 8.4cqw;
+  height: 8.4cqw;
+  font-size: 4.2cqw;
+}
+
+/* ---------- crachá ---------- */
+.badge {
+  container-type: inline-size;
+  position: relative;
+  width: 100%;
+  aspect-ratio: 10/14.6;
+  border-radius: 16px;
+  overflow: hidden;
+  background: var(--sand);
+  color: var(--ink);
+  isolation: isolate;
+  box-shadow:
+    0 22px 44px -26px rgba(11, 11, 15, 0.5),
+    0 0 0 1px var(--ink-08);
+}
+.badge--white {
+  background: #FFF;
+}
+.badge--ink {
+  background: var(--ink);
+  color: #FFF;
+}
+.badge--deep {
+  background: var(--deep);
+  color: #FFF;
+}
+.badge .slot {
+  position: absolute;
+  top: 4.6cqw;
+  left: 50%;
+  width: 24cqw;
+  height: 4.8cqw;
+  margin-left: -12cqw;
+  border-radius: 9cqw;
+  background: rgba(11, 11, 15, 0.2);
+  box-shadow: inset 0 0.7cqw 1.2cqw rgba(0, 0, 0, 0.28);
+  z-index: 6;
+}
+.badge .in {
+  position: absolute;
+  inset: 14cqw 8cqw 8cqw;
+  display: flex;
+  flex-direction: column;
+  z-index: 3;
+}
+.badge .wm {
+  --s: 9cqw;
+}
+.badge .seal {
+  width: 13cqw;
+  height: 13cqw;
+  font-size: 6.6cqw;
+}
+.badge .k {
+  font: 600 3.4cqw/1.25 var(--fm);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.badge .role {
+  font: 800 13.6cqw/0.86 var(--fd);
+  letter-spacing: -0.035em;
+}
+.badge .nm {
+  font: 700 8.4cqw/1 var(--fd);
+  letter-spacing: -0.02em;
+}
+.badge .p {
+  font: 400 4.2cqw/1.4 var(--fb);
+  opacity: 0.8;
+}
+.badge .sm {
+  font: 500 3.3cqw/1.45 var(--fm);
+}
+.badge .sq {
+  right: -12cqw;
+  bottom: -7cqw;
+  width: 54cqw;
+  height: 36cqw;
+  z-index: 2;
+}
+.badge .qr {
+  width: 26cqw;
+  height: 26cqw;
+  background: #FFF;
+  padding: 1.8cqw;
+  border-radius: 2.4cqw;
+  flex: none;
+}
+.badge .qr svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.badge .band {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+
+/* =============================================================================
+   3. INTERFACE DO SITE
+   ============================================================================= */
+
+/* ---------------------------------------------------------------------------
+   3.1 Estrutura geral
+   --------------------------------------------------------------------------- */
+:root {
+  --topbar-h: 60px;
+  --toc-w: 284px;
+}
+
+html {
+  scroll-padding-top: calc(var(--topbar-h) + 20px);
+}
+
+html.is-locked {
+  overflow: hidden;
+}
+
+body {
+  overflow-x: hidden;
+  overflow-x: clip;
+}
+
+.shell {
+  position: relative;
+}
+
+.page {
+  min-width: 0;
+}
+
+/* Pular direto para o conteúdo (teclado e leitores de tela) */
+.skip {
+  position: absolute;
+  left: 12px;
+  top: -80px;
+  z-index: 200;
+  padding: 10px 14px;
+  border-radius: 10px;
+  background: var(--ink);
+  color: #FFF;
+  font: 600 14px/1 var(--fb);
+  text-decoration: none;
+}
+
+.skip:focus {
+  top: 12px;
+}
+
+/* ---------------------------------------------------------------------------
+   3.2 Barra superior
+   --------------------------------------------------------------------------- */
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 70;
+  padding-top: env(safe-area-inset-top, 0px);
+  background: rgba(247, 243, 234, 0.92);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--ink-08);
+}
+
+.topbar__in {
+  display: flex;
+  align-items: center;
+  gap: clamp(10px, 2vw, 20px);
+  height: var(--topbar-h);
+  padding-inline: max(clamp(12px, 3vw, 28px), env(safe-area-inset-left, 0px));
+}
+
+.topbar__home {
+  display: flex;
+  align-items: center;
+  flex: none;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+.docswitch {
+  display: flex;
+  flex: none;
+  gap: 2px;
+  padding: 3px;
+  border-radius: 99px;
+  background: var(--ink-08);
+}
+
+.docswitch a {
+  padding: 8px 13px;
+  border-radius: 99px;
+  font: 600 12.5px/1 var(--fb);
+  color: var(--ink-70);
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.docswitch a:hover {
+  color: var(--ink);
+}
+
+.docswitch a[aria-current="page"] {
+  background: #FFF;
+  color: var(--ink);
+  box-shadow: 0 1px 3px rgba(11, 11, 15, 0.12);
+}
+
+.topbar__now {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+  margin-left: auto;
+  font: 500 12px/1 var(--fm);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--ink-50);
+  white-space: nowrap;
+}
+
+.topbar__now span:last-child {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.menu-btn {
+  display: inline-flex;
+  flex: none;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 14px 9px 11px;
+  border: 1px solid var(--ink-15);
+  border-radius: 99px;
+  background: #FFF;
+  color: var(--ink);
+  font: 600 13px/1 var(--fb);
+  cursor: pointer;
+}
+
+.menu-btn .ic {
+  font-size: 18px;
+}
+
+.menu-btn:hover {
+  border-color: var(--blue);
+  color: var(--blue);
+}
+
+/* Número da seção (usado no menu e na barra) */
+.toc__nav .n,
+.topbar__now .n {
+  display: inline-grid;
+  place-items: center;
+  min-width: 28px;
+  height: 22px;
+  padding: 0 6px;
+  border-radius: 99px;
+  font: 600 11px/1 var(--fm);
+  letter-spacing: 0;
+}
+
+.topbar__now .n {
+  background: var(--blue);
+  color: #FFF;
+}
+
+.toc__nav .n--dot::before,
+.topbar__now .n--dot::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: currentColor;
+}
+
+/* ---------------------------------------------------------------------------
+   3.3 Menu de seções
+   Celular, tablet e notebook: gaveta que abre pela direita.
+   Monitores a partir de 1440px: barra lateral fixa (ver 3.4).
+   --------------------------------------------------------------------------- */
+.toc {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 90;
+  display: flex;
+  flex-direction: column;
+  width: min(360px, 90vw);
+  padding: env(safe-area-inset-top, 0px) env(safe-area-inset-right, 0px) env(safe-area-inset-bottom, 0px) 0;
+  background: var(--sand);
+  box-shadow: -30px 0 60px -30px rgba(11, 11, 15, 0.45);
+  transform: translateX(105%);
+  visibility: hidden;
+  transition:
+    transform 0.28s ease,
+    visibility 0s linear 0.28s;
+}
+
+.toc.is-open {
+  transform: none;
+  visibility: visible;
+  transition: transform 0.28s ease;
+}
+
+.toc__overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 85;
+  background: rgba(11, 11, 15, 0.42);
+}
+
+.toc__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 14px 12px 20px;
+  border-bottom: 1px solid var(--ink-08);
+}
+
+.toc__head p {
+  font: 600 12px/1 var(--fm);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-50);
+}
+
+.toc__close {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--ink-15);
+  border-radius: 50%;
+  background: #FFF;
+  color: var(--ink);
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.toc__scroll {
+  flex: 1;
+  display: grid;
+  align-content: start;
+  gap: 22px;
+  padding: 16px 12px 28px;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+
+.toc .docswitch {
+  display: none;
+  justify-self: start;
+  margin-inline: 8px;
+}
+
+.toc__nav {
+  display: grid;
+  gap: 18px;
+}
+
+.toc__group {
+  display: grid;
+  gap: 2px;
+}
+
+.toc__label {
+  padding: 0 10px 8px;
+  font: 600 11px/1 var(--fm);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-50);
+}
+
+.toc__nav a {
+  display: grid;
+  grid-template-columns: 30px minmax(0, 1fr);
+  align-items: center;
+  gap: 10px;
+  padding: 7px 10px;
+  border-radius: 12px;
+  font: 500 14.5px/1.25 var(--fb);
+  color: var(--ink-70);
+  text-decoration: none;
+}
+
+.toc__nav a .n {
+  min-width: 0;
+  width: 30px;
+  background: var(--ink-08);
+  color: var(--ink-70);
+}
+
+.toc__nav a:hover {
+  background: rgba(255, 255, 255, 0.7);
+  color: var(--ink);
+}
+
+.toc__nav a.is-active {
+  background: #FFF;
+  color: var(--ink);
+  box-shadow: 0 1px 3px rgba(11, 11, 15, 0.08);
+}
+
+.toc__nav a.is-active .n {
+  background: var(--blue);
+  color: #FFF;
+}
+
+/* Copiar rápido (dentro do menu) */
+.quick {
+  display: grid;
+  gap: 14px;
+  margin-inline: 4px;
+  padding: 16px;
+  border-radius: 18px;
+  background: #FFF;
+  box-shadow: 0 0 0 1px var(--ink-08);
+}
+
+.quick__title {
+  font: 600 11px/1 var(--fm);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--blue);
+}
+
+.quick__colors {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.quick__color {
+  display: grid;
+  justify-items: center;
+  gap: 6px;
+  padding: 0;
+  border: 0;
+  border-radius: 8px;
+  background: none;
+  color: var(--ink-70);
+  font: 500 10px/1.1 var(--fm);
+  cursor: copy;
+}
+
+.quick__color i {
+  width: 100%;
+  max-width: 44px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 1px var(--ink-15);
+  transition: transform 0.15s;
+}
+
+.quick__color:hover i {
+  transform: scale(1.08);
+}
+
+.quick__fonts {
+  display: grid;
+  gap: 4px;
+}
+
+.quick__font {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 9px 10px;
+  border: 0;
+  border-radius: 10px;
+  background: var(--sand);
+  color: var(--ink);
+  text-align: left;
+  cursor: copy;
+}
+
+.quick__font b {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.quick__font span {
+  font: 500 10.5px/1 var(--fm);
+  color: var(--ink-50);
+}
+
+.quick__font:hover {
+  box-shadow: inset 0 0 0 1.5px var(--blue);
+}
+
+.quick__hint {
+  font-size: 12.5px;
+  line-height: 1.45;
+  color: var(--ink-50);
+}
+
+.quick__hint .ic {
+  font-size: 13px;
+  vertical-align: -2px;
+  color: var(--blue);
+}
+
+/* ---------------------------------------------------------------------------
+   3.4 Barra lateral fixa em monitores grandes
+   --------------------------------------------------------------------------- */
+@media (min-width: 1440px) {
+  .shell {
+    display: grid;
+    grid-template-columns: var(--toc-w) minmax(0, 1fr);
+    align-items: start;
+  }
+
+  .toc {
+    position: sticky;
+    top: calc(var(--topbar-h) + env(safe-area-inset-top, 0px));
+    z-index: 20;
+    width: auto;
+    height: calc(100vh - var(--topbar-h) - env(safe-area-inset-top, 0px));
+    padding: 0;
+    border-right: 1px solid var(--ink-08);
+    box-shadow: none;
+    transform: none;
+    visibility: visible;
+    transition: none;
+  }
+
+  .toc__head,
+  .menu-btn {
+    display: none;
+  }
+
+  .toc__overlay {
+    display: none !important;
+  }
+}
+
+@media (max-width: 900px) {
+  .topbar__now {
+    display: none;
+  }
+
+  .menu-btn {
+    margin-left: auto;
+  }
+}
+
+@media (max-width: 560px) {
+  .topbar .docswitch {
+    display: none;
+  }
+
+  .toc .docswitch {
+    display: flex;
+  }
+}
+
+/* ---------------------------------------------------------------------------
+   3.5 Copiar
+   .cpb        botão com texto ("Copiar legenda")
+   .cp         valor clicável (HEX, RGB, CMYK…)
+   .is-copyable área inteira clicável (cor, ícone, frase, versão do símbolo)
+   --------------------------------------------------------------------------- */
+.cpbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+:where(
+    .stack,
+    .font,
+    .panel,
+    .post figcaption,
+    .story figcaption,
+    .info,
+    .tx,
+    .isnot > div,
+    .pn > div,
+    .bdesc,
+    .quick,
+    .car-head,
+    .sig > div
+  )
+  > .cpbar {
+  margin-top: 0;
+}
+
+.cpbar__label {
+  margin-right: 2px;
+  font: 500 12px/1.3 var(--fm);
+  color: var(--ink-50);
+}
+
+.cpb {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 8px 12px 8px 10px;
+  border: 1px solid var(--ink-15);
+  border-radius: 99px;
+  background: rgba(255, 255, 255, 0.6);
+  color: var(--ink);
+  font: 600 12.5px/1 var(--fb);
+  white-space: nowrap;
+  cursor: pointer;
+  transition:
+    border-color 0.15s,
+    color 0.15s,
+    background-color 0.15s;
+}
+
+.cpb .ic {
+  font-size: 15px;
+}
+
+.cpb:hover {
+  border-color: var(--blue);
+  background: #FFF;
+  color: var(--blue);
+}
+
+.cpb.is-done {
+  border-color: var(--blue);
+  background: var(--blue);
+  color: #FFF;
+}
+
+.sec--ink .cpb,
+.sec--deep .cpb {
+  border-color: var(--w-15);
+  background: var(--w-08);
+  color: #FFF;
+}
+
+.sec--ink .cpb:hover,
+.sec--deep .cpb:hover {
+  border-color: #FFF;
+  background: var(--w-15);
+  color: #FFF;
+}
+
+.sec--ink .cpbar__label,
+.sec--deep .cpbar__label {
+  color: var(--w-50);
+}
+
+/* Botões sobre cartões brancos dentro de seções escuras */
+.sig .cpb,
+.pn .y .cpb {
+  border-color: var(--ink-15);
+  background: transparent;
+  color: var(--ink);
+}
+
+.sig .cpb:hover,
+.pn .y .cpb:hover {
+  border-color: var(--blue);
+  color: var(--blue);
+}
+
+.cp {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  max-width: 100%;
+  margin: -3px -6px;
+  padding: 3px 6px;
+  border: 0;
+  border-radius: 6px;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  text-align: inherit;
+  cursor: copy;
+}
+
+.cp .ic {
+  flex: none;
+  font-size: 13px;
+  opacity: 0.4;
+  transition: opacity 0.15s;
+}
+
+.cp:hover {
+  background: var(--blue-10);
+  color: var(--blue);
+}
+
+.cp:hover .ic,
+.cp:focus-visible .ic,
+.cp.is-done .ic {
+  opacity: 1;
+}
+
+.bgt--ink .cp:hover,
+.bgt--deep .cp:hover {
+  background: var(--w-15);
+  color: #FFF;
+}
+
+.cpchips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 14px;
+  margin-top: 8px;
+}
+
+.is-copyable {
+  cursor: copy;
+  outline: 2px solid transparent;
+  outline-offset: 3px;
+  transition: outline-color 0.15s;
+}
+
+.is-copyable:hover,
+.is-copyable.is-done {
+  outline-color: var(--blue);
+}
+
+.sec--ink .is-copyable:hover,
+.sec--deep .is-copyable:hover {
+  outline-color: #FFF;
+}
+
+.is-copyable--inset {
+  outline-offset: -4px;
+}
+
+.scale tr.is-copyable:hover td {
+  background: var(--blue-10);
+}
+
+.cp-hint {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 12px;
+  font: 500 12px/1.4 var(--fm);
+  color: var(--ink-50);
+}
+
+:where(.stack) > .cp-hint {
+  margin-top: 0;
+}
+
+.cp-hint .ic {
+  flex: none;
+  font-size: 15px;
+  color: var(--blue);
+}
+
+.sec--ink .cp-hint,
+.sec--deep .cp-hint {
+  color: var(--w-50);
+}
+
+.sec--deep .cp-hint .ic {
+  color: #FFF;
+}
+
+/* Link da seção (ao lado do número) */
+.sec-link {
+  display: inline-grid;
+  place-items: center;
+  width: 26px;
+  height: 26px;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  color: inherit;
+  font-size: 15px;
+  opacity: 0.55;
+  cursor: copy;
+}
+
+.sec-link:hover,
+.sec-link:focus-visible {
+  background: var(--blue-10);
+  opacity: 1;
+}
+
+/* Códigos da biblioteca viram links nas aplicações */
+.used a {
+  padding: 6px 9px;
+  border-radius: 99px;
+  background: var(--blue-10);
+  color: var(--deep);
+  font: 500 11px/1 var(--fm);
+  text-decoration: none;
+}
+
+.used a:hover {
+  background: var(--blue);
+  color: #FFF;
+}
+
+/* Aviso "Copiado" */
+.toast {
+  position: fixed;
+  left: 50%;
+  bottom: calc(20px + env(safe-area-inset-bottom, 0px));
+  z-index: 120;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  max-width: min(520px, calc(100vw - 32px));
+  padding: 10px 18px 10px 10px;
+  border-radius: 99px;
+  background: var(--ink);
+  color: #FFF;
+  font: 600 13.5px/1.3 var(--fb);
+  box-shadow: 0 20px 40px -20px rgba(11, 11, 15, 0.6);
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(-50%, 16px);
+  transition:
+    opacity 0.2s,
+    transform 0.2s;
+}
+
+.toast.is-on {
+  opacity: 1;
+  transform: translate(-50%, 0);
+}
+
+.toast .ok {
+  display: grid;
+  flex: none;
+  place-items: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: var(--blue);
+  font-size: 14px;
+}
+
+.toast > span:last-child:not(.ok) {
+  min-width: 0;
+  overflow: hidden;
+  font: 500 12px/1.2 var(--fm);
+  color: var(--w-70);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* ---------------------------------------------------------------------------
+   3.6 Botões alinhados na base de cartões vizinhos
+   --------------------------------------------------------------------------- */
+.posts > figure.post,
+.stories > .story {
+  grid-template-rows: auto 1fr;
+}
+
+.posts > figure.post > figcaption,
+.stories > .story > figcaption,
+.el .tx,
+.teec .info,
+.obj .info,
+.isnot > div,
+.pn > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.posts > figure.post > figcaption {
+  gap: 6px;
+}
+
+.stories > .story > figcaption {
+  gap: 4px;
+}
+
+.el .tx {
+  gap: 5px;
+}
+
+.teec .info {
+  gap: 8px;
+}
+
+.obj .info {
+  gap: 6px;
+}
+
+.isnot > div,
+.pn > div {
+  gap: 12px;
+}
+
+.el {
+  grid-template-rows: 170px 1fr;
+}
+
+.obj {
+  grid-template-rows: 260px 1fr;
+}
+
+.fonts .font {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+:is(
+    .posts > figure.post > figcaption,
+    .stories > .story > figcaption,
+    .el .tx,
+    .teec .info,
+    .obj .info,
+    .isnot > div,
+    .pn > div,
+    .fonts .font
+  )
+  > .cpbar {
+  margin-top: auto;
+  padding-top: 8px;
+}
+
+/* =============================================================================
+   4. SEÇÕES DO ICON & VISUAL SYSTEM
+   ============================================================================= */
+
+/* -----------------------------------------------------------------------------
+   4.1 Componentes compartilhados com o Brand Book
+   -----------------------------------------------------------------------------
+   (calendário, grade viva, camiseta, crachá, painéis)
+   ----------------------------------------------------------------------------- */
+
+.mgrid {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: clamp(5px, 0.8vw, 9px);
+  font: 500 clamp(10px, 1vw, 12px)/1 var(--fm);
+}
+.mgrid .dw {
+  text-align: center;
+  color: var(--ink-50);
+  padding-bottom: 4px;
+}
+.mgrid .d {
+  position: relative;
+  aspect-ratio: 1;
+  border-radius: 24%;
+  display: grid;
+  place-items: center;
+  background: var(--blue-10);
+  color: var(--ink-70);
+}
+.mgrid .d.e {
+  background: var(--blue-40);
+  color: var(--ink);
+}
+.mgrid .d.live {
+  background: var(--blue);
+  color: #FFF;
+  border-radius: 50%;
+  font-weight: 700;
+  box-shadow: 0 0 0 6px rgba(46, 75, 255, 0.14);
+}
+.mgrid .d.o {
+  background: none;
+}
+.vf {
+  --c: var(--blue);
+  background:
+    linear-gradient(var(--c), var(--c)) top left/24px 2px no-repeat,
+    linear-gradient(var(--c), var(--c)) top left/2px 24px no-repeat,
+    linear-gradient(var(--c), var(--c)) top right/24px 2px no-repeat,
+    linear-gradient(var(--c), var(--c)) top right/2px 24px no-repeat,
+    linear-gradient(var(--c), var(--c)) bottom left/24px 2px no-repeat,
+    linear-gradient(var(--c), var(--c)) bottom left/2px 24px no-repeat,
+    linear-gradient(var(--c), var(--c)) bottom right/24px 2px no-repeat,
+    linear-gradient(var(--c), var(--c)) bottom right/2px 24px no-repeat;
+  padding: clamp(24px, 4.4vw, 56px);
+}
+.term {
+  font: 500 13px/1.5 var(--fm);
+  color: var(--w-50);
+}
+.term b {
+  color: #FFF;
+  font-weight: 600;
+}
+.f-ls {
+  font-family: var(--fd);
+}
+.f-in {
+  font-family: var(--fb);
+}
+.f-jb {
+  font-family: var(--fm);
+}
+.rules3 {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+@media (max-width: 760px) {
+  .rules3 {
+    grid-template-columns: 1fr;
+  }
+}
+.rules3 li {
+  display: flex;
+  gap: 10px;
+  font-size: 14.5px;
+  line-height: 1.45;
+  padding: 16px;
+  border-radius: 16px;
+  background: var(--blue-10);
+}
+.rules3 .ic {
+  color: var(--blue);
+  font-size: 18px;
+  margin-top: 1px;
+}
+.panel {
+  border-radius: 24px;
+  padding: 24px;
+  display: grid;
+  gap: 16px;
+  align-content: start;
+}
+.minigrid {
+  display: grid;
+  grid-template-columns: repeat(5, 18px);
+  gap: 6px;
+}
+.minigrid i {
+  width: 18px;
+  height: 18px;
+  border-radius: 5px;
+  background: var(--blue-40);
+}
+.minigrid i.n {
+  border-radius: 50%;
+  background: var(--blue);
+}
+.minigrid i.o {
+  background: var(--blue-10);
+}
+.ig .rowg {
+  display: flex;
+  gap: 2cqw;
+  align-items: center;
+}
+.ig .rowg i {
+  width: 7.4cqw;
+  height: 7.4cqw;
+  border-radius: 2cqw;
+  background: var(--blue-40);
+}
+.ig .rowg i.n {
+  border-radius: 50%;
+  background: var(--blue);
+}
+.brow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3cqw;
+}
+.badge .nm {
+  font-size: 9.4cqw;
+}
+.badge .role {
+  font-size: 11.8cqw;
+}
+.tee {
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+  margin-inline: auto;
+}
+.tee > svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(0 14px 18px rgba(11, 11, 15, 0.18));
+}
+.tee .print {
+  container-type: inline-size;
+  position: absolute;
+  left: 27%;
+  top: 22%;
+  width: 46%;
+}
+
+/* -----------------------------------------------------------------------------
+   4.2 Capa, processo, matriz, família, combinações e elementos
+   ----------------------------------------------------------------------------- */
+
+/* ---------- icon & visual system ---------- */
+.icover {
+  padding-block: clamp(40px, 6vw, 72px) clamp(64px, 9vw, 112px);
+  overflow: hidden;
+}
+.icover .meta-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px 24px;
+  font: 500 12px/1.4 var(--fm);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--w-50);
+  padding-bottom: clamp(40px, 7vw, 88px);
+}
+.icover .meta-row b {
+  color: #FFF;
+  font-weight: 600;
+}
+.icover-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+  gap: clamp(32px, 6vw, 80px);
+  align-items: center;
+}
+@media (max-width: 860px) {
+  .icover-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.icover .ttl {
+  font: 800 clamp(56px, 10vw, 132px)/0.86 var(--fd);
+  letter-spacing: -0.04em;
+  color: #FFF;
+}
+.icover .ttl em {
+  font-style: normal;
+  color: var(--blue);
+}
+.icover .term {
+  margin-top: 26px;
+  font-size: 14px;
+}
+.icover .hero {
+  position: relative;
+  display: grid;
+  place-items: center;
+  aspect-ratio: 1;
+  max-width: 460px;
+  width: 100%;
+  justify-self: center;
+}
+.icover .hero .gv {
+  width: 78%;
+  height: 78%;
+}
+.icover .hero .ring {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 1px var(--w-15);
+}
+.icover .hero .ring2 {
+  position: absolute;
+  inset: 14%;
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 1px var(--w-08);
+}
+.icover .back {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 30px;
+  font: 500 13px/1 var(--fm);
+  color: #FFF;
+  text-decoration: none;
+}
+.icover .back .cta {
+  width: 46px;
+  height: 46px;
+  font-size: 20px;
+}
+.final {
+  background: var(--blue);
+  color: #FFF;
+}
+.final .wrap {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  gap: clamp(16px, 3vw, 36px);
+  align-items: center;
+  padding-block: clamp(28px, 4vw, 44px);
+}
+@media (max-width: 760px) {
+  .final .wrap {
+    grid-template-columns: 1fr;
+  }
+}
+.final .gvbox {
+  display: grid;
+  place-items: center;
+  width: 96px;
+  height: 96px;
+  border-radius: 24px;
+  background: #FFF;
+}
+.final .gvbox .gv {
+  font-size: 70px;
+}
+.final .k {
+  font: 600 12px/1 var(--fm);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.75);
+}
+.final b {
+  display: block;
+  font: 700 clamp(28px, 3.4vw, 42px)/1 var(--fd);
+  letter-spacing: -0.02em;
+  margin-top: 8px;
+}
+.final p {
+  color: rgba(255, 255, 255, 0.88);
+  max-width: 62ch;
+  margin-top: 8px;
+}
+.final .chip {
+  border-color: #FFF;
+  color: #FFF;
+}
+.dirs {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+}
+@media (max-width: 1040px) {
+  .dirs {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 520px) {
+  .dirs {
+    grid-template-columns: 1fr;
+  }
+}
+.dir {
+  position: relative;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  border-radius: 22px;
+  overflow: hidden;
+  background: #FFF;
+  box-shadow: 0 0 0 1px var(--ink-08);
+}
+.dir.win {
+  box-shadow: 0 0 0 2.5px var(--blue);
+}
+.dir .art {
+  position: relative;
+  display: grid;
+  place-items: center;
+  aspect-ratio: 1.15;
+  background: var(--sand);
+}
+.dir.win .art {
+  background: var(--ink);
+}
+.dir .art > svg,
+.dir .art > .gv {
+  width: 52%;
+  height: auto;
+  display: block;
+  aspect-ratio: 1;
+}
+.dir .art .chip {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  background: var(--sand);
+}
+.dir.win .art .chip {
+  background: var(--blue);
+  border-color: var(--blue);
+  color: #FFF;
+}
+.dir .art .lt {
+  position: absolute;
+  top: 14px;
+  right: 16px;
+  font: 600 12px/1 var(--fm);
+  color: var(--ink-50);
+}
+.dir.win .art .lt {
+  color: var(--w-50);
+}
+.dir .tx {
+  display: grid;
+  gap: 8px;
+  align-content: start;
+  padding: 18px 18px 20px;
+}
+.dir .tx b {
+  font: 700 21px/1.05 var(--fd);
+  letter-spacing: -0.01em;
+}
+.dir .tx p {
+  font-size: 13.5px;
+  line-height: 1.45;
+  color: var(--ink-70);
+}
+.dir .tx .why {
+  font: 500 12px/1.45 var(--fm);
+  color: var(--ink-50);
+  border-top: 1px solid var(--ink-08);
+  padding-top: 10px;
+}
+.dir.win .tx .why {
+  color: var(--blue);
+}
+.fig-scroll {
+  overflow-x: auto;
+  padding-bottom: 8px;
+}
+.matrix {
+  table-layout: fixed;
+  border-collapse: separate;
+  border-spacing: 10px;
+  margin: -10px;
+  min-width: 880px;
+  width: calc(100% + 20px);
+}
+.matrix thead th:first-child {
+  width: 160px;
+}
+.matrix th {
+  font: 500 11px/1.35 var(--fm);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--ink-70);
+  text-align: left;
+  vertical-align: bottom;
+  padding: 0 4px 4px;
+}
+.matrix th .sw2 {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 8px;
+}
+.matrix th .sw2 i {
+  width: 22px;
+  height: 22px;
+  border-radius: 6px;
+  box-shadow: inset 0 0 0 1px var(--ink-15);
+}
+.matrix th.rowh {
+  width: 150px;
+  vertical-align: middle;
+  text-align: left;
+  padding: 0 8px 0 0;
+}
+.matrix th.rowh b {
+  display: block;
+  font: 700 18px/1.1 var(--fd);
+  letter-spacing: -0.01em;
+  text-transform: none;
+  color: var(--ink);
+}
+.matrix th.rowh span {
+  display: block;
+  text-transform: none;
+  letter-spacing: 0;
+  font: 400 12.5px/1.4 var(--fb);
+  color: var(--ink-50);
+  margin-top: 4px;
+}
+.matrix td {
+  padding: 0;
+}
+.tile {
+  display: grid;
+  place-items: center;
+  aspect-ratio: 1;
+  border-radius: 16px;
+  min-width: 100px;
+}
+.tile .gv {
+  width: 52%;
+  height: 52%;
+}
+.tile.sm {
+  grid-auto-flow: column;
+  gap: 12px;
+}
+.tile.sm .gv {
+  width: 24px;
+  height: 24px;
+}
+.tile.sm .gv.s16 {
+  width: 16px;
+  height: 16px;
+}
+.tile.light {
+  box-shadow: inset 0 0 0 1px var(--ink-08);
+}
+.fam {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 24px 12px;
+}
+@media (max-width: 900px) {
+  .fam {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+@media (max-width: 420px) {
+  .fam {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+.fam li {
+  display: grid;
+  justify-items: center;
+  gap: 10px;
+  text-align: center;
+}
+.fam .seal {
+  width: clamp(64px, 8vw, 92px);
+  height: clamp(64px, 8vw, 92px);
+  font-size: clamp(28px, 3.6vw, 40px);
+}
+.fam b {
+  font: 600 14.5px/1.2 var(--fb);
+}
+.fam li > span:not(.seal) {
+  font: 500 11px/1 var(--fm);
+  color: var(--ink-50);
+}
+.famspec {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.3fr);
+  gap: clamp(20px, 4vw, 48px);
+  align-items: center;
+}
+@media (max-width: 860px) {
+  .famspec {
+    grid-template-columns: 1fr;
+  }
+}
+.famspec .big svg {
+  width: 100%;
+  max-width: 340px;
+  height: auto;
+  display: block;
+  margin-inline: auto;
+}
+.scales {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 18px 26px;
+}
+.scales figure {
+  display: grid;
+  justify-items: center;
+  gap: 8px;
+  font: 500 11px/1 var(--fm);
+  color: var(--ink-50);
+}
+.scales figure .ic {
+  color: var(--ink);
+}
+.combos {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+}
+@media (max-width: 900px) {
+  .combos {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+.combo {
+  display: grid;
+  gap: 10px;
+}
+.combo .stage {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  height: 132px;
+  border-radius: 18px;
+  overflow: hidden;
+}
+.combo .stage .seal {
+  width: 58px;
+  height: 58px;
+  font-size: 26px;
+}
+.combo .stage .gv {
+  font-size: 58px;
+}
+.combo p {
+  display: flex;
+  gap: 8px;
+  font-size: 13.5px;
+  line-height: 1.4;
+  color: var(--ink-70);
+}
+.combo p .ic {
+  flex: none;
+  font-size: 16px;
+  margin-top: 1px;
+}
+.combo.ok p .ic {
+  color: var(--blue);
+}
+.combo.bad .stage::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top right,
+    transparent calc(50% - 1px),
+    rgba(11, 11, 15, 0.5) 50%,
+    transparent calc(50% + 1px)
+  );
+}
+.combo.bad.dk .stage::after {
+  background: linear-gradient(
+    to top right,
+    transparent calc(50% - 1px),
+    rgba(255, 255, 255, 0.6) 50%,
+    transparent calc(50% + 1px)
+  );
+}
+.lib {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+}
+@media (max-width: 1000px) {
+  .lib {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 480px) {
+  .lib {
+    grid-template-columns: 1fr;
+  }
+}
+.el {
+  display: grid;
+  grid-template-rows: 170px auto;
+  border-radius: 20px;
+  overflow: hidden;
+  background: #FFF;
+  box-shadow: 0 0 0 1px var(--ink-08);
+}
+.el .demo {
+  position: relative;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  background: var(--sand);
+}
+.el .demo.dk {
+  background: var(--ink);
+}
+.el .demo.dp {
+  background: var(--deep);
+}
+.el .tx {
+  display: grid;
+  gap: 5px;
+  padding: 14px 16px 16px;
+}
+.el .tx b {
+  font: 700 17px/1.1 var(--fd);
+}
+.el .tx p {
+  font-size: 13px;
+  line-height: 1.45;
+  color: var(--ink-70);
+}
+.el .tx .id {
+  font: 500 11px/1 var(--fm);
+  color: var(--blue);
+}
+.grp {
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+  margin: clamp(36px, 5vw, 56px) 0 14px;
+}
+.grp:first-child {
+  margin-top: 0;
+}
+.grp b {
+  font: 700 26px/1 var(--fd);
+  letter-spacing: -0.015em;
+}
+.grp span {
+  font-size: 14px;
+  color: var(--ink-50);
+}
+.vfbox {
+  width: 120px;
+  height: 90px;
+  --c: var(--blue);
+}
+.dotbox {
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.28) 1.2px, transparent 1.5px);
+  background-size: 18px 18px;
+}
+.conn {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  width: 70%;
+}
+.conn i {
+  flex: 1;
+  height: 1.5px;
+  background: var(--blue);
+}
+.conn b {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--blue);
+  flex: none;
+}
+.conn s {
+  width: 14px;
+  height: 14px;
+  border-radius: 4px;
+  background: var(--blue-40);
+  flex: none;
+}
+.arrowline {
+  display: flex;
+  align-items: center;
+  width: 62%;
+  color: var(--blue);
+}
+.arrowline i {
+  flex: 1;
+  height: 2px;
+  background: currentColor;
+  margin-right: -4px;
+}
+.arrowline .ic {
+  font-size: 30px;
+}
+.apps {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+  align-items: start;
+}
+@media (max-width: 1040px) {
+  .apps {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 560px) {
+  .apps {
+    grid-template-columns: 1fr;
+  }
+}
+.app-c {
+  display: grid;
+  gap: 14px;
+  align-content: start;
+}
+.app-c .pv {
+  position: relative;
+}
+.app-c h4 {
+  font: 700 20px/1.1 var(--fd);
+}
+.used {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.used span {
+  font: 500 11px/1 var(--fm);
+  padding: 6px 9px;
+  border-radius: 99px;
+  background: var(--blue-10);
+  color: var(--deep);
+}
+.teecard {
+  background: var(--sand);
+  border-radius: 18px;
+  padding: 18px;
+}
+
+/* -----------------------------------------------------------------------------
+   4.3 Detalhes das aplicações
+   ----------------------------------------------------------------------------- */
+
+/* ---------- icon doc: extras ---------- */
+.panel--white {
+  background: #FFF;
+  color: var(--ink);
+  box-shadow: 0 0 0 1px var(--ink-08);
+}
+.fam-w {
+  box-shadow: inset 0 0 0 1px var(--ink-08);
+}
+.nodebad .gv circle {
+  fill: #0B0B0F;
+}
+.mini-cal {
+  width: 150px;
+}
+.mini-cal .mgrid {
+  gap: 4px;
+  font-size: 10px;
+}
+.mini-cal .mgrid .d.live {
+  box-shadow: 0 0 0 3px rgba(46, 75, 255, 0.16);
+}
+.leaf {
+  display: block;
+  width: 92px;
+  height: 92px;
+  border-radius: 10px 46px 10px 46px;
+  background: var(--blue);
+}
+.brk {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font: 700 64px/1 var(--fd);
+  color: var(--blue);
+}
+.brk b {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--blue);
+}
+.vf-p {
+  position: relative;
+  display: grid;
+  gap: 5cqw;
+  padding: 10cqw 9cqw;
+  color: #FFF;
+  background:
+    linear-gradient(#2E4BFF, #2E4BFF) top left/14cqw 1.2cqw no-repeat,
+    linear-gradient(#2E4BFF, #2E4BFF) top left/1.2cqw 14cqw no-repeat,
+    linear-gradient(#2E4BFF, #2E4BFF) top right/14cqw 1.2cqw no-repeat,
+    linear-gradient(#2E4BFF, #2E4BFF) top right/1.2cqw 14cqw no-repeat,
+    linear-gradient(#2E4BFF, #2E4BFF) bottom left/14cqw 1.2cqw no-repeat,
+    linear-gradient(#2E4BFF, #2E4BFF) bottom left/1.2cqw 14cqw no-repeat,
+    linear-gradient(#2E4BFF, #2E4BFF) bottom right/14cqw 1.2cqw no-repeat,
+    linear-gradient(#2E4BFF, #2E4BFF) bottom right/1.2cqw 14cqw no-repeat;
+}
+.vf-p .br {
+  font: 600 8cqw/1 var(--fm);
+  color: #2E4BFF;
+}
+.vf-p .cn {
+  display: flex;
+  align-items: center;
+  gap: 2.6cqw;
+}
+.vf-p .cn s {
+  width: 9cqw;
+  height: 9cqw;
+  border-radius: 2.4cqw;
+  background: rgba(46, 75, 255, 0.4);
+  flex: none;
+}
+.vf-p .cn i {
+  flex: 1;
+  height: 0.9cqw;
+  background: #2E4BFF;
+}
+.vf-p .cn b {
+  width: 13cqw;
+  height: 13cqw;
+  border-radius: 50%;
+  background: #2E4BFF;
+  flex: none;
+}
+.vf-p .tx {
+  font: 800 12.5cqw/0.92 var(--fd);
+  letter-spacing: -0.03em;
+}
+.vf-p .rec {
+  display: flex;
+  align-items: center;
+  gap: 2.4cqw;
+  font: 600 5.6cqw/1 var(--fm);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.72);
+}
+.vf-p .rec b {
+  width: 4.4cqw;
+  height: 4.4cqw;
+  border-radius: 50%;
+  background: #2E4BFF;
+}
+.badge .leaf-bg {
+  position: absolute;
+  right: -16cqw;
+  top: 40%;
+  width: 42cqw;
+  height: 42cqw;
+  border-radius: 6cqw 21cqw 6cqw 21cqw;
+  background: rgba(46, 75, 255, 0.07);
+  z-index: 1;
+}
+.app-c .phone {
+  max-width: 100%;
+}
+.app-c .scr .mg {
+  font-size: 2.4cqw;
+  gap: 1cqw;
+}
+.app-c .stk {
+  padding: 3.4cqw;
+}
+
+/* =============================================================================
+   5. AJUSTES RESPONSIVOS
+   ============================================================================= */
+
+/* ---------------------------------------------------------------------------
+   5.1 Monitores grandes: o conteúdo ganha mais largura
+   --------------------------------------------------------------------------- */
+@media (min-width: 1680px) {
+  .wrap {
+    max-width: 1320px;
+  }
+}
+
+@media (min-width: 2200px) {
+  .wrap {
+    max-width: 1480px;
+  }
+}
+
+/* ---------------------------------------------------------------------------
+   5.2 Tablets (até 1024px)
+   --------------------------------------------------------------------------- */
+@media (max-width: 1024px) {
+  .cover .meta-row span:nth-child(2) {
+    display: none;
+  }
+
+  .persona q {
+    max-width: 30ch;
+  }
+}
+
+/* ---------------------------------------------------------------------------
+   5.3 Celulares (até 600px)
+   --------------------------------------------------------------------------- */
+
+/* Escalas de personalidade cabem em qualquer largura */
+.sl {
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+}
+
+@media (max-width: 600px) {
+  .sl {
+    gap: 8px;
+    font-size: 12.5px;
+  }
+
+  .sl .cells {
+    gap: 3px;
+  }
+
+  .sl .cells i {
+    width: 10px;
+    border-radius: 3px;
+  }
+
+  /* Cartões de fonte: a amostra "Aa" diminui junto com a tela */
+  .font .aa {
+    font-size: clamp(72px, 24vw, 112px);
+  }
+
+  .font .aa--mono {
+    font-size: clamp(60px, 20vw, 96px);
+  }
+
+  /* Selo de embaixadora empilha acima do texto */
+  .sealbig {
+    grid-template-columns: 1fr;
+    justify-items: start;
+  }
+
+  .sealbig svg {
+    width: 112px;
+    height: 112px;
+  }
+
+  /* Tom de voz: exemplos com respiro menor */
+  .dd p {
+    padding: 14px 14px 14px 44px;
+  }
+
+  /* Perfil do Instagram: cabeçalho mais compacto */
+  .pf-name b {
+    font-size: 17px;
+  }
+
+  .pf-tabs {
+    gap: 40px;
+  }
+
+  /* Capa: calendário mais compacto */
+  .month {
+    padding: 16px;
+  }
+
+  .month .mh {
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+}
+
+.font .aa--mono {
+  font-weight: 500;
+}
+
+@media (min-width: 601px) {
+  .font .aa--mono {
+    font-size: 96px;
+  }
+}
+
+/* Destaques: 3 por linha em celulares estreitos */
+@media (max-width: 440px) {
+  .hl-row {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .hl {
+    font-size: 12.5px;
+  }
+
+  .quick__colors {
+    gap: 6px;
+  }
+}
+
+/* Assinatura de parceiros acompanha a largura da tela */
+.lu {
+  font-size: clamp(30px, 7vw, 52px);
+}
+
+.pdd .lu {
+  font-size: 26px;
+}
+
+/* Tabelas e peças largas rolam dentro do próprio quadro */
+.scroll-x,
+.fig-scroll,
+.carousel {
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Celulares bem estreitos (até 360px) */
+@media (max-width: 360px) {
+  .topbar__home .wm {
+    --s: 21px !important;
+  }
+
+  .menu-btn span {
+    display: none;
+  }
+
+  .menu-btn {
+    padding: 9px 11px;
+  }
+
+  .combos {
+    grid-template-columns: 1fr;
+  }
+
+  .pins {
+    gap: 20px 12px;
+  }
+}
+
+/* ---------------------------------------------------------------------------
+   5.4 Telas em modo paisagem baixas (celular deitado)
+   --------------------------------------------------------------------------- */
+@media (max-height: 480px) and (orientation: landscape) {
+  :root {
+    --topbar-h: 52px;
+  }
+}
+
+/* ---------------------------------------------------------------------------
+   5.5 Detalhes que apertam em telas estreitas
+   --------------------------------------------------------------------------- */
+
+/* @ dos posts pequenos (feed, teste de reconhecimento) */
+.ig .hd {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Cartões da linguagem técnica */
+.tcard .term,
+.tcard b {
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 480px) {
+  .lang .scene--tec {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Placas de sinalização: quantas colunas couberem */
+.signs {
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+}
+
+/* Verso do crachá de staff: rótulos em palavras */
+.sched--words li {
+  grid-template-columns: 17cqw minmax(0, 1fr);
+}
+
+/* =============================================================================
+   6. IMPRESSÃO
+   ============================================================================= */
+
+/* Imprimir ou salvar em PDF pelo navegador */
+@media print {
+  .skip,
+  .topbar,
+  .toc,
+  .toc__overlay,
+  .toast,
+  .cpbar,
+  .cp-hint,
+  .sec-link,
+  .cp .ic {
+    display: none !important;
+  }
+
+  .shell {
+    display: block !important;
+  }
+
+  * {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .sh,
+  .h4,
+  .eyebrow {
+    break-after: avoid;
+  }
+
+  .parts li,
+  .legal {
+    break-inside: avoid;
+  }
+
+  .ig,
+  .phone,
+  .badge,
+  .post,
+  .story,
+  .official,
+  .dir,
+  .el,
+  .teec,
+  .obj,
+  .combo,
+  .brole,
+  .sw,
+  .font,
+  .fam li,
+  .matrix tr,
+  .car-wrap,
+  .bgt,
+  .pin,
+  .values li,
+  .dd,
+  .pr4 li,
+  .channels li,
+  .kit li,
+  .contrast li,
+  .wrong li,
+  .pdd li,
+  .lock,
+  .evp,
+  .sign,
+  .app-c,
+  .idcard,
+  .sealbig,
+  .pfp,
+  .sig,
+  .tcard,
+  .lang,
+  .hdemo,
+  .isnot > div,
+  .words > div,
+  .pn > div,
+  .profile,
+  .month,
+  .evo,
+  .decision,
+  .unify,
+  .final,
+  .panel,
+  .famspec,
+  .stickers,
+  .hl-spec,
+  .protect,
+  .pa,
+  .anpost,
+  .cats li {
+    break-inside: avoid;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <!--
+    ESTRUTURA DA PÁGINA
+    .topbar     barra superior: logo, troca de documento, seção atual e botão "Seções"
+    aside#toc   menu de seções + "Copiar rápido" (gaveta no celular, barra lateral a partir de 1440px)
+    main        seções do documento, na mesma ordem do menu
+    .toast      aviso "Copiado"
+
+    Os desenhos são gerados pelo script no fim do arquivo a partir de atributos:
+    data-i="cal" (ícone), data-gv="outline" (símbolo), data-sq="a" (rabisco),
+    data-wm="a" (logo), data-qr="texto" (QR ilustrativo).
+  -->
+  <a class="skip" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="topbar">
+    <div class="topbar__in">
+      <a class="topbar__home" href="#capa" aria-label="Tech Date: voltar ao início"><span data-wm="a" style="--s:24px"></span></a>
+      <nav class="docswitch" aria-label="Documentos do manual">
+        <a href="index.html">Brand Book</a>
+        <a href="icon-system.html" aria-current="page">Icon System</a>
+      </nav>
+      <p class="topbar__now" aria-hidden="true"><span class="n n--dot"></span><span>Capa</span></p>
+      <button class="menu-btn" type="button" aria-controls="toc" aria-expanded="false"><i data-i="menu"></i><span>Seções</span></button>
+    </div>
+  </header>
+
+  <div class="shell">
+    <aside class="toc" id="toc" aria-label="Menu do manual">
+      <div class="toc__head">
+        <p>Neste manual</p>
+        <button class="toc__close" type="button" aria-label="Fechar menu"><i data-i="x"></i></button>
+      </div>
+      <div class="toc__scroll">
+        <nav class="docswitch" aria-label="Documentos do manual">
+          <a href="index.html">Brand Book</a>
+          <a href="icon-system.html" aria-current="page">Icon System</a>
+        </nav>
+        <nav class="toc__nav" aria-label="Seções">
+          <div class="toc__group">
+            <a href="#capa"><span class="n n--dot"></span><span>Capa e decisão final</span></a>
+          </div>
+          <div class="toc__group">
+            <p class="toc__label">Símbolo</p>
+            <a href="#processo"><span class="n">01</span><span>Processo de exploração</span></a>
+            <a href="#matriz"><span class="n">02</span><span>Matriz de variações</span></a>
+          </div>
+          <div class="toc__group">
+            <p class="toc__label">Sistema</p>
+            <a href="#categorias"><span class="n">03</span><span>Ícones de categoria</span></a>
+            <a href="#combinacoes"><span class="n">04</span><span>Combinações de cor</span></a>
+            <a href="#elementos"><span class="n">05</span><span>Elementos gráficos</span></a>
+            <a href="#aplicacoes"><span class="n">06</span><span>Elementos aplicados</span></a>
+          </div>
+        </nav>
+        <div class="quick">
+          <p class="quick__title">Copiar rápido</p>
+          <div class="quick__colors">
+            <button type="button" class="quick__color js-copy" data-copy="#2E4BFF" data-copy-name="Azul #2E4BFF" aria-label="Copiar Azul #2E4BFF"><i style="background:#2E4BFF"></i>Azul</button>
+            <button type="button" class="quick__color js-copy" data-copy="#0305C6" data-copy-name="Azul profundo #0305C6" aria-label="Copiar Azul profundo #0305C6"><i style="background:#0305C6"></i>Profundo</button>
+            <button type="button" class="quick__color js-copy" data-copy="#0B0B0F" data-copy-name="Ink #0B0B0F" aria-label="Copiar Ink #0B0B0F"><i style="background:#0B0B0F"></i>Ink</button>
+            <button type="button" class="quick__color js-copy" data-copy="#F7F3EA" data-copy-name="Sand #F7F3EA" aria-label="Copiar Sand #F7F3EA"><i style="background:#F7F3EA"></i>Sand</button>
+            <button type="button" class="quick__color js-copy" data-copy="#FFFFFF" data-copy-name="Branco #FFFFFF" aria-label="Copiar Branco #FFFFFF"><i style="background:#FFFFFF"></i>Branco</button>
+          </div>
+          <div class="quick__fonts">
+            <button type="button" class="quick__font js-copy" data-copy-key="font-titulo" data-copy-name="font-family League Spartan"><b class="f-ls">League Spartan</b><span>títulos</span></button>
+            <button type="button" class="quick__font js-copy" data-copy-key="font-texto" data-copy-name="font-family Inter"><b class="f-in">Inter</b><span>texto</span></button>
+            <button type="button" class="quick__font js-copy" data-copy-key="font-dados" data-copy-name="font-family JetBrains Mono"><b class="f-jb" style="font-size:13px">JetBrains Mono</b><span>dados</span></button>
+          </div>
+          <div class="cpbar">
+            <button type="button" class="cpb js-copy" data-copy-key="css" data-copy-name="variáveis CSS"><i data-i="copy"></i><span>Tokens CSS</span></button>
+            <button type="button" class="cpb js-copy" data-copy-key="tailwind" data-copy-name="tema Tailwind"><i data-i="copy"></i><span>Tailwind</span></button>
+            <button type="button" class="cpb js-copy" data-copy-key="fonts-link" data-copy-name="link das fontes"><i data-i="copy"></i><span>Link das fontes</span></button>
+          </div>
+          <p class="quick__hint">Cores, fontes, textos e desenhos com o ícone <i data-i="copy"></i> ou que ficam contornados em azul ao passar o mouse copiam com um clique.</p>
+        </div>
+      </div>
+    </aside>
+    <div class="toc__overlay" hidden></div>
+
+    <div class="page">
+      <main id="conteudo">
+        <section class="sec--ink dots icover" id="capa">
+          <div class="wrap">
+            <div class="meta-row"><span><b>Icon &amp; Visual System</b> · documento 2 de 2</span><span>v1.1 · setembro de 2026</span><span>símbolo: Grade Viva</span></div>
+            <div class="icover-grid">
+              <div>
+                <h1 class="ttl">Icon &amp; <em>Visual</em> System</h1>
+                <p class="term">$ tech-date <b>--simbolo</b> grade-viva <b>--variacoes</b> 36 <b>--categorias</b> 12</p>
+                <p class="lede" style="color:var(--w-70);margin-top:18px">O catálogo do símbolo da Tech Date: como ele nasceu, todas as versões permitidas, a família de ícones das categorias e os elementos gráficos que montam cada peça.</p>
+                <a class="back" href="index.html"><span class="cta"><i data-i="arrow"></i></span>abrir o documento 1 · Brand Book</a>
+              </div>
+              <div class="hero"><span class="ring"></span><span class="ring2"></span><i data-gv="outline" data-f="#FFFFFF"></i></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="final" aria-label="Decisão final">
+          <div class="wrap">
+            <span class="gvbox"><i data-gv="outline" data-f="#2E4BFF"></i></span>
+            <div><p class="k">Decisão final</p><b>Grade Viva é o símbolo oficial.</b><p>É o mesmo desenho que já vive dentro do logo e continua igual com o nome Tech Date. As outras sete direções abaixo ficam registradas como histórico do processo — não são opções em aberto.</p></div>
+            <span class="chip">aprovado · set/2026</span>
+          </div>
+        </section>
+
+        <!-- PROCESSO -->
+        <section class="sec" id="processo">
+          <div class="wrap">
+            <div class="sh">
+              <p class="eyebrow"><span class="n">01</span>Processo de exploração</p>
+              <h2 class="h2">Oito caminhos desenhados. Um escolhido.</h2>
+              <p class="def"><b>Exploração</b> é a fase em que se desenham várias ideias diferentes antes de decidir. Mostrar o histórico ajuda a entender por que o símbolo final é como é — e evita reabrir discussões já resolvidas.</p>
+            </div>
+            <div class="dirs">
+              <article class="dir win"><div class="art"><span class="chip">decisão final</span><span class="lt">A</span><i data-gv="outline" data-f="#FFFFFF"></i></div>
+                <div class="tx"><b>Grade Viva</b><p>Um calendário de parede com três dias organizados e um nó azul: sempre tem algo acontecendo agora.</p><p class="why">Escolhido: une agenda e movimento, funciona sem o nome e já vivia no logo.</p></div></article>
+              <article class="dir"><div class="art"><span class="chip">histórico</span><span class="lt">B</span>
+                <svg viewBox="0 0 120 120" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M40 30 14 60l26 30M80 30l26 30-26 30" stroke="#0B0B0F" stroke-width="7"/><path d="M34 60h14l7-16 10 32 7-16h14" stroke="#2E4BFF" stroke-width="5"/></svg></div>
+                <div class="tx"><b>Colchete-Pulso</b><p>Os sinais &lt; &gt; do código abraçando um pulso de batimento: tecnologia com vida.</p><p class="why">Ficou no histórico: fala de código, mas não de agenda.</p></div></article>
+              <article class="dir"><div class="art"><span class="chip">histórico</span><span class="lt">C</span>
+                <svg viewBox="0 0 120 120" fill="none" aria-hidden="true"><circle cx="60" cy="62" r="36" stroke="#0B0B0F" stroke-width="7"/><circle cx="60" cy="62" r="16" fill="#2E4BFF" fill-opacity=".4"/><circle cx="87" cy="37" r="11" fill="#2E4BFF" stroke="#F7F3EA" stroke-width="4"/></svg></div>
+                <div class="tx"><b>Anel de Presença</b><p>Uma órbita com um ponto em movimento: pessoas girando em torno de um encontro.</p><p class="why">Ficou no histórico: abstrato demais, lembra marca de telecom.</p></div></article>
+              <article class="dir"><div class="art"><span class="chip">histórico</span><span class="lt">D</span>
+                <svg viewBox="0 0 120 120" fill="none" stroke-linejoin="round" aria-hidden="true"><path d="M26 24h66a8 8 0 0 1 8 8v44l-28 28H34a8 8 0 0 1-8-8z" stroke="#0B0B0F" stroke-width="7"/><path d="M100 76H80a8 8 0 0 0-8 8v20" stroke="#0B0B0F" stroke-width="7"/><path d="M42 16v14M80 16v14" stroke="#0B0B0F" stroke-width="7" stroke-linecap="round"/><text x="38" y="72" font-family="League Spartan, sans-serif" font-weight="800" font-size="32" fill="#2E4BFF">31</text></svg></div>
+                <div class="tx"><b>Folha Destacável</b><p>A página do calendário com a ponta dobrada, pronta para virar o dia.</p><p class="why">Ficou no histórico: nostálgico, parece app de lembrete.</p></div></article>
+              <article class="dir"><div class="art"><span class="chip">histórico</span><span class="lt">E</span>
+                <svg viewBox="0 0 120 120" fill="none" aria-hidden="true"><path d="M60 108S26 78 26 48a34 34 0 0 1 68 0c0 30-34 60-34 60z" stroke="#0B0B0F" stroke-width="7" stroke-linejoin="round"/><g fill="#2E4BFF" fill-opacity=".4"><rect x="44" y="31" width="13" height="13" rx="3"/><rect x="63" y="31" width="13" height="13" rx="3"/><rect x="44" y="50" width="13" height="13" rx="3"/></g><circle cx="69.5" cy="56.5" r="7" fill="#2E4BFF"/></svg></div>
+                <div class="tx"><b>Pino-Agenda</b><p>O pino de mapa com a grade dentro: o evento tem data e tem lugar.</p><p class="why">Ficou no histórico: confunde com app de mapas e esconde os eventos online.</p></div></article>
+              <article class="dir"><div class="art"><span class="chip">histórico</span><span class="lt">F</span>
+                <svg viewBox="0 0 120 120" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="18" y="26" width="84" height="78" rx="18" stroke="#0B0B0F" stroke-width="7"/><path d="M42 18v14M78 18v14" stroke="#0B0B0F" stroke-width="7"/><path d="M38 52l12 12-12 12" stroke="#0B0B0F" stroke-width="7"/><rect x="62" y="48" width="9" height="32" rx="2" fill="#2E4BFF"/></svg></div>
+                <div class="tx"><b>Cursor na Agenda</b><p>Um prompt de terminal dentro do calendário, com o cursor esperando o próximo comando.</p><p class="why">Ficou no histórico: técnico demais para quem está começando.</p></div></article>
+              <article class="dir"><div class="art"><span class="chip">histórico</span><span class="lt">G</span>
+                <svg viewBox="0 0 120 120" fill="none" aria-hidden="true"><path d="M28 38 60 24l34 24-14 42-40-4zM60 24l-20 62M28 38l52 52" stroke="#0B0B0F" stroke-width="4" stroke-linejoin="round"/><circle cx="28" cy="38" r="8" fill="#0B0B0F"/><circle cx="60" cy="24" r="8" fill="#0B0B0F"/><circle cx="94" cy="48" r="8" fill="#0B0B0F"/><circle cx="40" cy="86" r="8" fill="#0B0B0F"/><circle cx="80" cy="90" r="12" fill="#2E4BFF"/></svg></div>
+                <div class="tx"><b>Constelação</b><p>Pontos ligados por linhas: a rede de pessoas e comunidades do ecossistema.</p><p class="why">Ficou no histórico: bonito, mas genérico para qualquer marca de rede.</p></div></article>
+              <article class="dir"><div class="art"><span class="chip">histórico</span><span class="lt">H</span>
+                <svg viewBox="0 0 120 120" fill="none" aria-hidden="true"><path d="M14 36a6 6 0 0 1 6-6h80a6 6 0 0 1 6 6v12a12 12 0 0 0 0 24v12a6 6 0 0 1-6 6H20a6 6 0 0 1-6-6V72a12 12 0 0 0 0-24z" stroke="#0B0B0F" stroke-width="7" stroke-linejoin="round"/><path d="M76 36v48" stroke="#0B0B0F" stroke-width="4" stroke-dasharray="6 7"/><circle cx="46" cy="60" r="12" fill="#2E4BFF"/></svg></div>
+                <div class="tx"><b>Ingresso</b><p>O tíquete destacável com o ponto azul marcando a entrada garantida.</p><p class="why">Ficou no histórico: sugere venda de ingressos, o que a marca não faz.</p></div></article>
+            </div>
+          </div>
+        </section>
+
+        <!-- MATRIZ -->
+        <section class="sec sec--white" id="matriz">
+          <div class="wrap">
+            <div class="sh">
+              <p class="eyebrow"><span class="n">02</span>Matriz de variações</p>
+              <h2 class="h2">Seis cores × seis estilos. Trinta e seis versões prontas.</h2>
+              <p class="def"><b>Matriz de variações</b> é a tabela que cruza as combinações de cor (colunas) com os estilos de desenho (linhas). Cada célula é uma versão aprovada: se a versão que você quer não está aqui, ela não existe.</p>
+            </div>
+            <div class="fig-scroll" tabindex="0" aria-label="Tabela de variações do símbolo"><table class="matrix" id="matrix"></table></div>
+            <p class="cap" style="margin-top:14px">No celular, arraste a tabela para o lado. No estilo “preenchido”, as células viram recortes na cor do fundo — é a única exceção à regra das células azuis.</p>
+          </div>
+        </section>
+
+        <!-- FAMÍLIA -->
+        <section class="sec" id="categorias">
+          <div class="wrap">
+            <div class="sh">
+              <p class="eyebrow"><span class="n">03</span>Família de ícones de categoria</p>
+              <h2 class="h2">Doze ícones que falam a mesma língua.</h2>
+              <p class="def"><b>Família de ícones</b> é um conjunto desenhado com as mesmas regras — mesma espessura de linha, mesmos cantos, mesmo tamanho — para que pareçam irmãos, e não recortes tirados de lugares diferentes.</p>
+            </div>
+            <ul class="fam">
+              <li><span class="seal"><i data-i="cal"></i></span><b>Eventos</b><span>destaque Agenda</span></li>
+              <li><span class="seal seal--ink"><i data-i="job"></i></span><b>Vagas</b><span>estágio e emprego</span></li>
+              <li><span class="seal"><i data-i="edu"></i></span><b>Cursos</b><span>trilhas e bolsas</span></li>
+              <li><span class="seal seal--white fam-w"><i data-i="com"></i></span><b>Comunidade</b><span>grupos e meetups</span></li>
+              <li><span class="seal seal--ink"><i data-i="tec"></i></span><b>Tecnologia</b><span>ferramentas e temas</span></li>
+              <li><span class="seal"><i data-i="idea"></i></span><b>Conteúdo</b><span>guias e carrosséis</span></li>
+              <li><span class="seal seal--white fam-w"><i data-i="pin"></i></span><b>Presença</b><span>cobertura ao vivo</span></li>
+              <li><span class="seal seal--ink"><i data-i="cup"></i></span><b>Cupons</b><span>descontos de parceiros</span></li>
+              <li><span class="seal"><i data-i="amb"></i></span><b>Embaixadores</b><span>gente de cada cidade</span></li>
+              <li><span class="seal seal--white fam-w"><i data-i="up"></i></span><b>Crescimento</b><span>carreira e dicas</span></li>
+              <li><span class="seal seal--ink"><i data-i="hack"></i></span><b>Hackathons</b><span>maratonas de criação</span></li>
+              <li><span class="seal"><i data-i="par"></i></span><b>Parceiros</b><span>marcas que apoiam</span></li>
+            </ul>
+
+            <div class="famspec sub">
+              <div class="panel panel--white big">
+                <svg viewBox="-3 -3 30 30" role="img" aria-label="Grade de construção de 24 por 24 com o ícone de eventos">
+                  <defs><pattern id="g24" width="1" height="1" patternUnits="userSpaceOnUse"><path d="M1 0H0V1" fill="none" stroke="rgba(46,75,255,.22)" stroke-width=".04"/></pattern></defs>
+                  <rect x="0" y="0" width="24" height="24" fill="url(#g24)"/>
+                  <rect x="0" y="0" width="24" height="24" fill="none" stroke="rgba(11,11,15,.4)" stroke-width=".06"/>
+                  <rect x="2" y="2" width="20" height="20" fill="rgba(46,75,255,.06)" stroke="rgba(46,75,255,.6)" stroke-width=".06" stroke-dasharray=".3 .3"/>
+                  <circle cx="12" cy="12" r="10" fill="none" stroke="rgba(11,11,15,.4)" stroke-width=".06" stroke-dasharray=".3 .3"/>
+                  <g fill="none" stroke="#2E4BFF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5" width="17" height="15.5" rx="3.4"/><path d="M8.2 3v4M15.8 3v4M3.5 10h17"/><circle cx="8.2" cy="14" r="1" fill="#2E4BFF" stroke="none"/><circle cx="12" cy="14" r="1" fill="#2E4BFF" stroke="none"/><circle cx="8.2" cy="17.2" r="1" fill="#2E4BFF" stroke="none"/><circle cx="15.4" cy="16.2" r="2.1" fill="#2E4BFF" stroke="none"/></g>
+                  <g font-family="JetBrains Mono, monospace" font-size=".9" fill="#0B0B0F"><text x="12" y="-1" text-anchor="middle">24 px</text><text x="-.6" y="12.3" text-anchor="end">2</text><text x="20.5" y="25.6" text-anchor="middle" fill="#2E4BFF">traço 1,8</text><text x="3" y="25.6">área útil 20</text></g>
+                </svg>
+              </div>
+              <div class="stack" style="gap:18px">
+                <p class="h4 blue">Como desenhar um ícone novo</p>
+                <ul class="rules3" style="grid-template-columns:1fr">
+                  <li><i data-i="check"></i>Grade de 24 × 24 px com 2 px de margem: o desenho mora na área útil de 20 px.</li>
+                  <li><i data-i="check"></i>Traço de 1,8 px, pontas e cantos arredondados, sem sombra e sem degradê.</li>
+                  <li><i data-i="check"></i>Detalhe cheio só quando ajuda a leitura — como o ponto maior do calendário, que ecoa o nó da Grade Viva.</li>
+                  <li><i data-i="check"></i>Dentro do selo azul ou ink, o ícone é branco. Solto sobre Sand ou branco, é azul.</li>
+                </ul>
+                <div class="panel panel--white" style="gap:12px">
+                  <p class="h4 blue">Escala</p>
+                  <div class="scales">
+                    <figure><i data-i="cal" style="font-size:48px"></i>48</figure>
+                    <figure><i data-i="cal" style="font-size:32px"></i>32</figure>
+                    <figure><i data-i="cal" style="font-size:24px"></i>24</figure>
+                    <figure><i data-i="cal" style="font-size:20px"></i>20</figure>
+                    <figure><i data-i="cal" style="font-size:16px"></i>16</figure>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- COMBINAÇÕES -->
+        <section class="sec sec--white" id="combinacoes">
+          <div class="wrap">
+            <div class="sh">
+              <p class="eyebrow"><span class="n">04</span>Combinações de cor aprovadas</p>
+              <h2 class="h2">Onde o símbolo pode — e não pode — morar.</h2>
+              <p class="def"><b>Combinação aprovada</b> é um par de fundo + cor do desenho que já foi testado para leitura. Fora dessa lista, o nó azul pode sumir ou a moldura perde força.</p>
+            </div>
+            <div class="combos">
+              <div class="combo ok"><div class="stage" style="background:#F7F3EA;box-shadow:inset 0 0 0 1px rgba(11,11,15,.08)"><i data-gv="outline" data-f="#2E4BFF"></i><span class="seal"><i data-i="cal"></i></span></div><p><i data-i="check"></i>Azul sobre Sand: a combinação padrão, primeira escolha sempre.</p></div>
+              <div class="combo ok"><div class="stage" style="background:#FFFFFF;box-shadow:inset 0 0 0 1px rgba(11,11,15,.08)"><i data-gv="outline" data-f="#2E4BFF"></i><span class="seal seal--ink"><i data-i="job"></i></span></div><p><i data-i="check"></i>Azul sobre branco: site, documentos e materiais de parceiros.</p></div>
+              <div class="combo ok"><div class="stage" style="background:#0B0B0F"><i data-gv="outline" data-f="#FFFFFF"></i><span class="seal"><i data-i="hack"></i></span></div><p><i data-i="check"></i>Branco sobre Ink: telas, palco e merch escuro.</p></div>
+              <div class="combo ok"><div class="stage" style="background:#0305C6"><i data-gv="outline" data-f="#FFFFFF"></i><span class="seal seal--ink"><i data-i="com"></i></span></div><p><i data-i="check"></i>Branco sobre Azul profundo: posts e stories de impacto.</p></div>
+              <div class="combo ok"><div class="stage" style="background:#0B0B0F"><i data-gv="outline" data-f="#2E4BFF"></i><span class="seal seal--white"><i data-i="up"></i></span></div><p><i data-i="check"></i>Azul sobre Ink: só em tamanhos a partir de 48 px.</p></div>
+              <div class="combo ok"><div class="stage" style="background:#F7F3EA;box-shadow:inset 0 0 0 1px rgba(11,11,15,.08)"><i data-gv="outline" data-f="#0B0B0F"></i><span class="seal seal--ink"><i data-i="par"></i></span></div><p><i data-i="check"></i>Ink sobre Sand: versão sóbria para contratos e documentos formais.</p></div>
+              <div class="combo bad dk"><div class="stage" style="background:#2E4BFF"><i data-gv="outline" data-f="#FFFFFF"></i></div><p><i data-i="x"></i>Sobre o azul #2E4BFF o nó some. Use o Azul profundo.</p></div>
+              <div class="combo bad nodebad"><div class="stage" style="background:#F7F3EA;box-shadow:inset 0 0 0 1px rgba(11,11,15,.08)"><i data-gv="outline" data-f="#2E4BFF"></i></div><p><i data-i="x"></i>Trocar a cor do nó ou das células. O nó é sempre #2E4BFF.</p></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ELEMENTOS -->
+        <section class="sec" id="elementos">
+          <div class="wrap">
+            <div class="sh">
+              <p class="eyebrow"><span class="n">05</span>Biblioteca de elementos gráficos</p>
+              <h2 class="h2">As peças soltas do sistema.</h2>
+              <p class="def"><b>Elementos gráficos de apoio</b> são as linhas, grades, formas e setas que acompanham o logo e o ícone. Eles dão ritmo e personalidade às peças, mas nunca substituem a informação. O código de cada um (L1, G2…) aparece nas aplicações da próxima seção.</p>
+            </div>
+
+            <div class="grp"><b>Linhas</b><span>traço fino, sempre azul</span></div>
+            <div class="lib">
+              <div class="el"><div class="demo"><span data-sq="a" style="inset:22px 18px"></span></div><div class="tx"><span class="id">L1</span><b>Rabisco laço</b><p>A assinatura das peças sociais. Sai de um canto e nunca cruza o texto.</p></div></div>
+              <div class="el"><div class="demo"><span data-sq="b" style="inset:22px 18px"></span></div><div class="tx"><span class="id">L2</span><b>Rabisco onda</b><p>Variação mais calma do laço, para crachás e peças com muita informação.</p></div></div>
+              <div class="el"><div class="demo dk"><span data-sq="c" style="inset:22px 0 22px 18px"></span></div><div class="tx"><span class="id">L3</span><b>Trilhos</b><p>Três linhas em curva, como caminhos que se encontram. Bom em fundo escuro.</p></div></div>
+              <div class="el"><div class="demo"><div class="conn"><s></s><i></i><b></b></div></div><div class="tx"><span class="id">L4</span><b>Linha-nó</b><p>Da célula parada até o nó vivo: o mesmo gesto do símbolo, em versão horizontal.</p></div></div>
+            </div>
+
+            <div class="grp"><b>Grades</b><span>a agenda como textura</span></div>
+            <div class="lib">
+              <div class="el"><div class="demo"><div class="minigrid" aria-hidden="true"></div></div><div class="tx"><span class="id">G1</span><b>Grade viva</b><p>Células a 40% e um nó cheio. Vira marcador, barra de progresso ou padrão.</p></div></div>
+              <div class="el"><div class="demo dk"><span class="dotbox"></span></div><div class="tx"><span class="id">G2</span><b>Grade de pontos</b><p>Textura da linguagem técnica. Só em fundo Ink ou Azul profundo, nunca em post.</p></div></div>
+              <div class="el"><div class="demo"><div class="mini-cal"><div class="mgrid" data-month="2026-10" data-ev="3,8,21,24" data-live="17"></div></div></div><div class="tx"><span class="id">G3</span><b>Calendário do mês</b><p>A grade real do mês, com eventos a 40% e o dia em destaque no nó azul.</p></div></div>
+              <div class="el"><div class="demo dk"><div class="vf vfbox"></div></div><div class="tx"><span class="id">G4</span><b>Moldura de câmera</b><p>Quatro cantos de visor. Enquadra um título no palco, no backdrop e na camiseta.</p></div></div>
+            </div>
+
+            <div class="grp"><b>Formas</b><span>cheias, simples e redondas</span></div>
+            <div class="lib">
+              <div class="el"><div class="demo" style="grid-auto-flow:column;gap:10px"><span class="seal" style="width:62px;height:62px;font-size:28px"><i data-i="cal"></i></span><span class="seal seal--ink" style="width:62px;height:62px;font-size:28px"><i data-i="job"></i></span></div><div class="tx"><span class="id">F1</span><b>Selo circular</b><p>Diz a categoria da peça. Alterna azul e ink, sempre com ícone branco.</p></div></div>
+              <div class="el"><div class="demo" style="grid-auto-flow:column;gap:8px"><span class="chip chip--solid">hackathon</span><span class="chip">grátis</span></div><div class="tx"><span class="id">F2</span><b>Pílula de tag</b><p>Categoria, formato e preço em mono. Cheia para o principal, contorno para o resto.</p></div></div>
+              <div class="el"><div class="demo"><span class="leaf"></span></div><div class="tx"><span class="id">F3</span><b>Folha</b><p>Quadrado com dois cantos bem redondos. Aparece grande e clarinha, atrás do conteúdo.</p></div></div>
+              <div class="el"><div class="demo"><i data-i="spark" style="font-size:72px;color:var(--blue)"></i></div><div class="tx"><span class="id">F4</span><b>Faísca</b><p>Marca novidade ou destaque. No máximo uma por peça, e nunca no lugar do selo.</p></div></div>
+            </div>
+
+            <div class="grp"><b>Setas</b><span>sempre apontando o próximo passo</span></div>
+            <div class="lib">
+              <div class="el"><div class="demo"><span class="cta" style="width:68px;height:68px;font-size:30px"><i data-i="arrow"></i></span></div><div class="tx"><span class="id">S1</span><b>Botão de seta</b><p>A chamada para ação de toda peça social. Um por peça, embaixo à esquerda.</p></div></div>
+              <div class="el"><div class="demo"><div class="arrowline"><i></i><i data-i="arrow"></i></div></div><div class="tx"><span class="id">S2</span><b>Seta de linha</b><p>Liga uma informação à outra: de → para, antes → depois, hoje → amanhã.</p></div></div>
+              <div class="el"><div class="demo"><span data-sq="d" style="inset:24px 18px"></span></div><div class="tx"><span class="id">S3</span><b>Seta desenhada</b><p>Versão à mão da seta, para apontar um detalhe dentro de post ou story.</p></div></div>
+              <div class="el"><div class="demo"><span class="brk">&lt;<b></b>&gt;</span></div><div class="tx"><span class="id">S4</span><b>Colchetes</b><p>O sotaque de código herdado do &lt;tech&gt;. Abraçam uma palavra ou o nó.</p></div></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- APLICAÇÕES -->
+        <section class="sec sec--white" id="aplicacoes">
+          <div class="wrap">
+            <div class="sh">
+              <p class="eyebrow"><span class="n">06</span>Elementos aplicados</p>
+              <h2 class="h2">Da biblioteca para as peças de verdade.</h2>
+              <p class="lede">Os mesmos elementos montando um post, um story, uma camiseta e um crachá. As etiquetas embaixo de cada peça mostram quais códigos da biblioteca foram usados.</p>
+            </div>
+            <div class="apps">
+              <div class="app-c">
+                <div class="pv"><div class="ig ig--ink"><span data-sq="c"></span><div class="in">
+                  <div class="top"><span class="seal"><i data-i="hack"></i></span><span data-wm="a" class="wm-white"></span></div>
+                  <div class="gap1 mt3"><span class="pl pl--fill">hackathon</span><span class="pl">36 h</span><span class="pl">grátis</span></div>
+                  <p class="t mt2">Hackday Baía abriu inscrições</p>
+                  <div class="rowg mt3"><i></i><i></i><i></i><i></i><i class="n"></i></div>
+                  <p class="k mt2" style="opacity:.7">03 out · Salvador, BA</p>
+                  <div class="bot"><span class="cta"><i data-i="arrow"></i></span><span class="hd">@techdatebr</span></div>
+                </div></div></div>
+                <h4>Post · hackathon</h4>
+                <div class="used"><span>F1</span><span>F2</span><span>G1</span><span>L3</span><span>S1</span></div>
+              </div>
+              <div class="app-c">
+                <div class="pv"><div class="phone" data-st="sand" data-sq="a" data-bar="1">
+                  <span class="seal seal--ink"><i data-i="cal"></i></span>
+                  <p class="t mt3">Outubro numa tela só</p>
+                  <div class="stk mt2"><div class="mg" data-mgp="2026-10" data-ev="3,8,17,21,24"></div></div>
+                  <span class="lk mta">Ver a agenda <span class="cta"><i data-i="arrow"></i></span></span>
+                </div></div>
+                <h4>Story · agenda do mês</h4>
+                <div class="used"><span>F1</span><span>G3</span><span>L1</span><span>S1</span></div>
+              </div>
+              <div class="app-c">
+                <div class="pv teecard"><div class="tee" data-tee="#0B0B0F"><div class="print"><div class="vf-p">
+                  <p class="br">&lt;agenda&gt;</p>
+                  <div class="cn"><s></s><s></s><s></s><i></i><b></b></div>
+                  <p class="tx">sempre tem algo acontecendo</p>
+                  <span class="rec"><b></b>ao vivo</span>
+                </div></div></div></div>
+                <h4>Camiseta · ao vivo</h4>
+                <div class="used"><span>G4</span><span>L4</span><span>S4</span></div>
+              </div>
+              <div class="app-c">
+                <div class="pv"><div class="badge badge--white"><span class="slot"></span><span class="leaf-bg"></span><span data-sq="b"></span><div class="in">
+                  <div class="brow"><span data-wm="a"></span><span class="seal seal--ink"><i data-i="chat"></i></span></div>
+                  <p class="k mt3 blue">IA na Prática · 08 out 2026</p>
+                  <p class="role mt2">Palestrante</p>
+                  <div class="mta"><p class="nm">Bruno Sato</p><p class="p mt1">ele/dele · Engenheiro de ML<br>Recife, PE</p>
+                    <div class="gap1 mt2"><span class="pl pl--ink">palco 2</span><span class="pl">14h30</span></div></div>
+                </div></div></div>
+                <h4>Crachá · palestrante</h4>
+                <div class="used"><span>F1</span><span>F2</span><span>F3</span><span>L2</span></div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="sec sec--ink dots" style="padding-block:clamp(48px,7vw,88px)">
+        <div class="wrap" style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:28px">
+          <div style="display:flex;align-items:center;gap:22px"><i data-gv="outline" data-f="#FFFFFF" style="font-size:clamp(64px,8vw,96px)"></i><span data-wm="a" class="wm-white" style="--s:clamp(48px,6vw,72px)"></span></div>
+          <div style="display:grid;gap:8px;max-width:420px">
+            <p style="font:600 22px/1.2 var(--fd);color:#fff">Uma grade, um nó azul e tudo o que acontece em volta.</p>
+            <p class="cap">Icon &amp; Visual System Tech Date · v1.1 · setembro de 2026 · documento 2 de 2</p>
+          </div>
+        </div>
+        <div class="wrap">
+          <div class="legal">
+            <p><b>© 2026 Tech Date. Todos os direitos reservados.</b> Este manual é público apenas para consulta. Nome, logo, símbolo Grade Viva, ícones, elementos gráficos, peças e textos não podem ser usados, copiados, adaptados ou redistribuídos sem autorização por escrito da Tech Date.</p>
+            <p>Pessoas, parceiros, eventos, comunidades, perfis, sites e e-mails dos exemplos são fictícios. As fontes League Spartan, Inter e JetBrains Mono pertencem a seus autores e são usadas sob a SIL Open Font License.</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+  <div class="toast" role="status" aria-live="polite"></div>
+
+  <script>
+/* =============================================================================
+   TECH DATE · ICON & VISUAL SYSTEM · SCRIPT
+   -----------------------------------------------------------------------------
+   © 2026 Tech Date. Todos os direitos reservados. Uso restrito: veja LICENSE.md.
+   
+   1. Biblioteca visual: ícones, símbolo Grade Viva, rabiscos, QR e logo
+      Atributos: data-i (ícone), data-gv (símbolo), data-sq (rabisco),
+      data-wm (logo), data-qr (QR ilustrativo), data-clone (repete uma peça)
+   2. Peças geradas: calendários, celulares, logos de parceiros, camisetas, bottons
+   3. Matriz de variações (só no Icon System)
+   4. Interface do site: copiar, menu de seções e seção ativa
+   5. Inicialização
+   ============================================================================= */
+
+/* =============================================================================
+   1. BIBLIOTECA VISUAL
+   ============================================================================= */
+
+(function () {
+  var B = "#2E4BFF";
+  var I = {
+    cal: '<rect x="3.5" y="5" width="17" height="15.5" rx="3.4"/><path d="M8.2 3v4M15.8 3v4M3.5 10h17"/><circle cx="8.2" cy="14" r="1" fill="currentColor" stroke="none"/><circle cx="12" cy="14" r="1" fill="currentColor" stroke="none"/><circle cx="8.2" cy="17.2" r="1" fill="currentColor" stroke="none"/><circle cx="15.4" cy="16.2" r="2.1" fill="currentColor" stroke="none"/>',
+    job: '<rect x="3" y="7" width="18" height="13" rx="2.6"/><path d="M9 7V5.6A1.6 1.6 0 0 1 10.6 4h2.8A1.6 1.6 0 0 1 15 5.6V7M3 12.5h18M10.5 12.5v1.8h3v-1.8"/>',
+    edu: '<path d="M2.5 9.5 12 5l9.5 4.5L12 14z"/><path d="M6.5 11.6v4.2c0 1.5 2.5 3 5.5 3s5.5-1.5 5.5-3v-4.2M21.5 9.5v5"/>',
+    com: '<circle cx="9" cy="8.5" r="3.2"/><path d="M3 19.5c0-3.3 2.7-5.6 6-5.6s6 2.3 6 5.6"/><circle cx="17" cy="9.5" r="2.4"/><path d="M16.2 14.1c2.9-.2 4.8 1.9 4.8 4.6"/>',
+    tec: '<rect x="4" y="4.5" width="16" height="11.5" rx="2"/><path d="M2 19.5h20M8.2 8.4l2.2 2-2.2 2M12.4 12.4h3.2"/>',
+    idea: '<path d="M9.2 17.5h5.6M10 20.5h4"/><path d="M12 3a6 6 0 0 0-3.7 10.7c.6.5 1 1.2 1 2v.8h5.4v-.8c0-.8.4-1.5 1-2A6 6 0 0 0 12 3z"/>',
+    par: '<circle cx="8.8" cy="12" r="5.3"/><circle cx="15.2" cy="12" r="5.3"/>',
+    amb: '<path d="M3.5 10v4a1.5 1.5 0 0 0 1.5 1.5h1.8L13.5 19V5L6.8 8.5H5A1.5 1.5 0 0 0 3.5 10z"/><path d="M7.5 15.5 9 20.5h2.2M17 9.2a4 4 0 0 1 0 5.6M19.5 6.8a7.4 7.4 0 0 1 0 10.4"/>',
+    cup: '<path d="M3 7.6A1.6 1.6 0 0 1 4.6 6h14.8A1.6 1.6 0 0 1 21 7.6V10a2 2 0 0 0 0 4v2.4a1.6 1.6 0 0 1-1.6 1.6H4.6A1.6 1.6 0 0 1 3 16.4V14a2 2 0 0 0 0-4z"/><path d="M9.5 6.5v1.6M9.5 11.2v1.6M9.5 15.9v1.6"/>',
+    up: '<path d="M3 17.5l6-6 4 4 8-8"/><path d="M15 7.5h6v6"/>',
+    hack: '<path d="M8.5 7 3.5 12l5 5M15.5 7l5 5-5 5M13.4 5l-2.8 14"/>',
+    pin: '<path d="M12 21s-6.8-5.8-6.8-11.3a6.8 6.8 0 0 1 13.6 0C18.8 15.2 12 21 12 21z"/><circle cx="12" cy="9.7" r="2.4"/>',
+    arrow: '<path d="M4.5 12h15M13.5 6l6 6-6 6"/>',
+    clock: '<circle cx="12" cy="12" r="8.6"/><path d="M12 7.4V12l3 2"/>',
+    copy: '<rect x="8.5" y="8.5" width="12" height="12" rx="2.4"/><path d="M15.5 8.5V6A2.5 2.5 0 0 0 13 3.5H6A2.5 2.5 0 0 0 3.5 6v7A2.5 2.5 0 0 0 6 15.5h2.5"/>',
+    heart:
+      '<path d="M12 20s-7.8-4.6-7.8-10.2A4.4 4.4 0 0 1 12 7.1a4.4 4.4 0 0 1 7.8 2.7C19.8 15.4 12 20 12 20z"/>',
+    chat: '<path d="M20.5 11.6a8.5 8.5 0 0 1-12.4 7.6L3.5 20.5l1.3-4.4a8.5 8.5 0 1 1 15.7-4.5z"/>',
+    send: '<path d="M21 3.5 3.5 10.6l7 2.9 2.9 7z"/><path d="M10.5 13.5 21 3.5"/>',
+    save: '<path d="M6 3.5h12v17l-6-4.4-6 4.4z"/>',
+    check: '<path d="M4.5 12.5l5 5 10-11"/>',
+    x: '<path d="M6 6l12 12M18 6 6 18"/>',
+    wifi: '<path d="M2.5 9a14 14 0 0 1 19 0M5.8 12.4a9 9 0 0 1 12.4 0M9.2 15.8a4 4 0 0 1 5.6 0"/><circle cx="12" cy="19" r="1" fill="currentColor" stroke="none"/>',
+    mail: '<rect x="3" y="5.5" width="18" height="13" rx="2.4"/><path d="m3.5 7 8.5 6.2L20.5 7"/>',
+    globe:
+      '<circle cx="12" cy="12" r="8.6"/><path d="M3.4 12h17.2M12 3.4c2.4 2.4 3.6 5.2 3.6 8.6s-1.2 6.2-3.6 8.6c-2.4-2.4-3.6-5.2-3.6-8.6S9.6 5.8 12 3.4z"/>',
+    spark:
+      '<path d="M12 3c.7 4.8 2.6 6.9 7.5 7.6-4.9.7-6.8 2.8-7.5 7.6-.7-4.8-2.6-6.9-7.5-7.6C9.4 9.9 11.3 7.8 12 3z" fill="currentColor"/>',
+    bell: '<path d="M6 16.5V11a6 6 0 0 1 12 0v5.5l1.5 1.5h-15z"/><path d="M10 20.5a2.2 2.2 0 0 0 4 0"/>',
+    play: '<path d="M8 5.5v13l10.5-6.5z"/>',
+    user: '<circle cx="12" cy="8.5" r="3.8"/><path d="M4.5 20.5c0-4 3.4-6.8 7.5-6.8s7.5 2.8 7.5 6.8"/>',
+    link: '<path d="M10 14a4.5 4.5 0 0 0 6.4 0l3.2-3.2a4.5 4.5 0 0 0-6.4-6.4L12 5.6"/><path d="M14 10a4.5 4.5 0 0 0-6.4 0l-3.2 3.2a4.5 4.5 0 0 0 6.4 6.4L12 18.4"/>',
+    menu: '<path d="M4 7h16M4 12h16M4 17h10"/>',
+    shield:
+      '<path d="M12 3.5 19.5 6v5.6c0 4.4-3.1 7.8-7.5 9-4.4-1.2-7.5-4.6-7.5-9V6z"/><path d="m8.8 12 2.2 2.2 4.2-4.4"/>',
+  };
+  function ico(n) {
+    return (
+      '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' +
+      (I[n] || "") +
+      "</svg>"
+    );
+  }
+
+  /* Grade Viva — geometria oficial (viewBox 52) */
+  var CELLS =
+    '<rect x="14" y="20" width="7.4" height="7.2" rx="1.7"/><rect x="25.4" y="20" width="7.4" height="7.2" rx="1.7"/><rect x="14" y="31.2" width="7.4" height="7.2" rx="1.7"/>';
+  function gOut(f) {
+    return (
+      '<rect x="5" y="7" width="42" height="42" rx="10" fill="none" stroke="' +
+      f +
+      '" stroke-width="2.6"/><path d="M17.3 5.6v5M34.7 5.6v5" stroke="' +
+      f +
+      '" stroke-width="3.6" stroke-linecap="round"/><g fill="' +
+      B +
+      '" fill-opacity=".4">' +
+      CELLS +
+      '</g><path d="M28.6 23.4 31.4 29" stroke="' +
+      B +
+      '" stroke-width="1.3" stroke-linecap="round"/><circle cx="32.5" cy="34.6" r="6.2" fill="' +
+      B +
+      '"/>'
+    );
+  }
+  function gFill(f, bg) {
+    return (
+      '<rect x="5" y="7" width="42" height="42" rx="10" fill="' +
+      f +
+      '" stroke="' +
+      f +
+      '" stroke-width="2.6"/><path d="M17.3 5.6v5M34.7 5.6v5" stroke="' +
+      bg +
+      '" stroke-width="7.4" stroke-linecap="round"/><path d="M17.3 5.6v5M34.7 5.6v5" stroke="' +
+      f +
+      '" stroke-width="3.6" stroke-linecap="round"/><g fill="' +
+      bg +
+      '" fill-opacity=".5">' +
+      CELLS +
+      '</g><path d="M28.6 23.4 31.4 29" stroke="' +
+      bg +
+      '" stroke-opacity=".7" stroke-width="1.3" stroke-linecap="round"/><circle cx="32.5" cy="34.6" r="6.2" fill="' +
+      B +
+      '" stroke="' +
+      bg +
+      '" stroke-width="2.2"/>'
+    );
+  }
+  function gGrid(f) {
+    return (
+      '<g fill="' +
+      B +
+      '" fill-opacity=".4"><rect x="6" y="6" width="17" height="17" rx="4"/><rect x="29" y="6" width="17" height="17" rx="4"/><rect x="6" y="29" width="17" height="17" rx="4"/></g><path d="M35 13.5 39.5 28" stroke="' +
+      f +
+      '" stroke-width="2" stroke-linecap="round"/><circle cx="37.5" cy="37.5" r="9" fill="' +
+      B +
+      '"/>'
+    );
+  }
+  function gSmall(f) {
+    return (
+      '<rect x="6.5" y="9.5" width="39" height="38" rx="10" fill="none" stroke="' +
+      f +
+      '" stroke-width="5"/><path d="M17.5 4.8v8M34.5 4.8v8" stroke="' +
+      f +
+      '" stroke-width="5.4" stroke-linecap="round"/><circle cx="31" cy="33" r="8.2" fill="' +
+      B +
+      '"/>'
+    );
+  }
+  function gBadge(shape, badge, bf) {
+    return (
+      (shape === "circle"
+        ? '<circle cx="26" cy="26" r="26" fill="' + badge + '"/>'
+        : '<rect width="52" height="52" rx="13" fill="' + badge + '"/>') +
+      '<g transform="translate(26 26.4) scale(.6) translate(-26 -27)">' +
+      gOut(bf) +
+      "</g>"
+    );
+  }
+  function GV(s, f, bg, badge, bf) {
+    f = f || "currentColor";
+    var b;
+    if (s === "filled") b = gFill(f, bg || "#F7F3EA");
+    else if (s === "grid") b = gGrid(f);
+    else if (s === "small") b = gSmall(f);
+    else if (s === "circle" || s === "square") b = gBadge(s, badge || "#0305C6", bf || "#FFFFFF");
+    else b = gOut(f);
+    return '<svg viewBox="0 0 52 52" aria-hidden="true">' + b + "</svg>";
+  }
+
+  /* rabiscos à mão (sempre azul) */
+  var SQ = {
+    a: "M6 154C40 128 64 136 88 112C110 90 98 62 78 72C58 82 80 122 124 112C166 102 172 56 206 48C222 44 234 50 240 58",
+    b: "M8 150C22 96 70 62 112 80C140 92 128 126 104 116C80 106 102 64 146 62C190 60 196 104 238 92",
+    c: "M24 176V104C24 62 58 36 102 36H250M64 176V112C64 86 84 70 110 70H250M104 176V124C104 112 112 104 124 104H250",
+    d: "M8 118C44 52 112 40 134 84C146 108 122 124 108 106C94 88 150 58 212 70M196 55l18 15-20 12",
+    e: "M4 128C24 128 36 98 58 98S92 128 114 128 148 98 170 98 204 128 226 128",
+  };
+  function sq(n, c, w) {
+    return (
+      '<svg viewBox="0 0 240 160" fill="none" preserveAspectRatio="xMaxYMax meet" aria-hidden="true"><path d="' +
+      (SQ[n] || SQ.a) +
+      '" stroke="' +
+      (c || B) +
+      '" stroke-width="' +
+      (w || 1.6) +
+      '" stroke-linecap="round" stroke-linejoin="round" vector-effect="non-scaling-stroke"/></svg>'
+    );
+  }
+
+  /* QR ilustrativo */
+  function qr(seed) {
+    var s = 7;
+    for (var i = 0; i < seed.length; i++) s = (s * 31 + seed.charCodeAt(i)) >>> 0;
+    function r() {
+      s = (s * 1664525 + 1013904223) >>> 0;
+      return s / 4294967296;
+    }
+    var N = 25,
+      p = "";
+    for (var y = 0; y < N; y++)
+      for (var x = 0; x < N; x++) {
+        var f = (x < 8 && y < 8) || (x > 16 && y < 8) || (x < 8 && y > 16);
+        if (!f && r() < 0.47) p += "M" + x + " " + y + "h1v1h-1z";
+      }
+    function fd(x, y) {
+      return (
+        '<path fill-rule="evenodd" d="M' +
+        x +
+        " " +
+        y +
+        "h7v7h-7zM" +
+        (x + 1) +
+        " " +
+        (y + 1) +
+        'v5h5v-5z"/><rect x="' +
+        (x + 2) +
+        '" y="' +
+        (y + 2) +
+        '" width="3" height="3"/>'
+      );
+    }
+    return (
+      '<svg viewBox="0 0 25 25" shape-rendering="crispEdges" fill="#0B0B0F" aria-hidden="true"><path d="' +
+      p +
+      '"/>' +
+      fd(0, 0) +
+      fd(18, 0) +
+      fd(0, 18) +
+      "</svg>"
+    );
+  }
+
+  function GA() {
+    return '<i class="ga"><svg viewBox="0 0 52 52" aria-hidden="true">' + gOut("currentColor") + "</svg></i>";
+  }
+  /* logo oficial Tech Date: tag <tech> em cima e o nome embaixo, com a Grade Viva no lugar do "a".
+   "old" = logo antigo Calendário Tech, usado só na história da marca */
+  function wm(v) {
+    if (v === "old")
+      return '<span class="mn">c' + GA() + 'lendário</span><span class="tg tg-old">&lt;tech&gt;</span>';
+    return '<span class="tg">&lt;tech&gt;</span><span class="mn">d' + GA() + "te</span>";
+  }
+
+  window.TD = { ico: ico, GV: GV, sq: sq, qr: qr, wm: wm, I: I, SQ: SQ };
+
+  function hydrate(root) {
+    root.querySelectorAll("[data-clone]").forEach(function (el) {
+      var src = document.getElementById(el.getAttribute("data-clone"));
+      if (!src) return;
+      var c = src.cloneNode(true);
+      c.removeAttribute("id");
+      el.replaceWith(c);
+    });
+    root.querySelectorAll("[data-i]").forEach(function (el) {
+      el.classList.add("ic");
+      el.innerHTML = ico(el.getAttribute("data-i"));
+    });
+    root.querySelectorAll("[data-gv]").forEach(function (el) {
+      var d = el.dataset;
+      el.classList.add("gv");
+      el.innerHTML = GV(d.gv, d.f, d.bg, d.badge, d.bf);
+    });
+    root.querySelectorAll("[data-sq]").forEach(function (el) {
+      el.classList.add("sq");
+      el.innerHTML = sq(el.getAttribute("data-sq"), el.dataset.c, el.dataset.w);
+    });
+    root.querySelectorAll("[data-qr]").forEach(function (el) {
+      el.innerHTML = qr(el.getAttribute("data-qr"));
+    });
+    root.querySelectorAll("[data-wm]").forEach(function (el) {
+      var v = el.getAttribute("data-wm");
+      el.classList.add("wm");
+      if (v !== "a") el.classList.add("wm--" + v);
+      el.setAttribute("role", "img");
+      el.setAttribute("aria-label", v === "old" ? "Calendário Tech (logo antigo)" : "Tech Date");
+      el.innerHTML = wm(v);
+    });
+  }
+  window.TD.hydrate = hydrate;
+})();
+
+/* =============================================================================
+   2. PEÇAS GERADAS
+   ============================================================================= */
+
+function buildPieces() {
+  var $$ = function (s) {
+    return Array.prototype.slice.call(document.querySelectorAll(s));
+  };
+  var DW = ["D", "S", "T", "Q", "Q", "S", "S"];
+  function monthCells(y, m) {
+    var first = new Date(y, m - 1, 1).getDay(),
+      n = new Date(y, m, 0).getDate(),
+      a = [];
+    for (var i = 0; i < first; i++) a.push(0);
+    for (var d = 1; d <= n; d++) a.push(d);
+    while (a.length % 7) a.push(0);
+    return a;
+  }
+  /* capa: setembro */
+  $$(".mgrid[data-month]").forEach(function (el) {
+    var p = el.dataset.month.split("-"),
+      ev = (el.dataset.ev || "").split(",").map(Number),
+      live = +el.dataset.live,
+      h = "";
+    DW.forEach(function (w) {
+      h += '<span class="dw">' + w + "</span>";
+    });
+    monthCells(+p[0], +p[1]).forEach(function (d) {
+      if (!d) {
+        h += '<span class="d o"></span>';
+        return;
+      }
+      var c = "d" + (d === live ? " live" : ev.indexOf(d) > -1 ? " e" : "");
+      h += '<span class="' + c + '">' + d + "</span>";
+    });
+    el.innerHTML = h;
+  });
+  /* post: calendário do mês */
+  $$(".mg[data-mgp]").forEach(function (el) {
+    var p = el.dataset.mgp.split("-"),
+      ev = (el.dataset.ev || "").split(",").map(Number),
+      h = "";
+    DW.forEach(function (w) {
+      h += "<b>" + w + "</b>";
+    });
+    monthCells(+p[0], +p[1]).forEach(function (d) {
+      h += d ? "<i" + (ev.indexOf(d) > -1 ? ' class="ev"' : "") + ">" + d + "</i>" : '<i class="x"></i>';
+    });
+    el.innerHTML = h;
+  });
+  /* escalas de personalidade */
+  $$(".sl[data-pos]").forEach(function (el) {
+    var pos = +el.dataset.pos,
+      h = "";
+    for (var i = 1; i <= 10; i++) h += '<i class="' + (i === pos ? "on" : i < pos ? "f" : "") + '"></i>';
+    el.querySelector(".cells").innerHTML = h;
+  });
+  $$(".minigrid").forEach(function (el) {
+    var h = "";
+    for (var i = 0; i < 15; i++)
+      h += '<i class="' + (i === 13 ? "n" : [1, 4, 6, 9, 10].indexOf(i) > -1 ? "o" : "") + '"></i>';
+    el.innerHTML = h;
+  });
+  /* celulares de story */
+  $$(".phone[data-st]").forEach(function (el) {
+    var sqn = el.dataset.sq || "a";
+    el.removeAttribute("data-sq");
+    var st = el.dataset.st,
+      bar = +(el.dataset.bar || 0),
+      b = "";
+    for (var i = 0; i < 3; i++) b += "<i" + (i <= bar ? ' class="on"' : "") + "></i>";
+    el.innerHTML =
+      '<div class="scr st--' +
+      st +
+      '"><div class="ui"><div class="bars">' +
+      b +
+      '</div><div class="who"><span class="av"><i data-gv="outline" data-f="#2E4BFF"></i></span>techdatebr <small>' +
+      ["2 h", "5 h", "8 h"][bar] +
+      '</small></div></div><span data-sq="' +
+      sqn +
+      '"></span><div class="sbody">' +
+      el.innerHTML +
+      '</div><div class="reply"><span>Enviar mensagem</span><i data-i="heart"></i><i data-i="send"></i></div></div>';
+  });
+  /* logos fictícios de parceiros (monocromáticos) */
+  var LOGO = {
+    nexa: '<span class="plogo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linejoin="round" stroke-linecap="round"><path d="M4.5 19.5v-15l15 15v-15"/></svg>NEXA</span>',
+    orbita:
+      '<span class="plogo or"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round"><path d="M3.5 16.5a8.5 8.5 0 0 1 17 0"/><circle cx="12" cy="16.5" r="2.8" fill="currentColor" stroke="none"/></svg>órbita</span>',
+    baoba:
+      '<span class="plogo bb"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 3 21 12h-5.5v9h-7v-9H3z"/></svg><span>BAOBÁ<br>LABS</span></span>',
+  };
+  $$("[data-logo]").forEach(function (el) {
+    el.outerHTML = LOGO[el.dataset.logo] || "";
+  });
+  /* backdrop step and repeat */
+  $$("[data-sr]").forEach(function (el) {
+    var p = el.dataset.sr.split("x"),
+      R = +p[0],
+      C = +p[1],
+      h = '<div class="rows">';
+    for (var r = 0; r < R; r++) {
+      h += '<div class="r">';
+      for (var c = 0; c < C; c++) {
+        h +=
+          (r + c) % 2 === 0
+            ? '<span data-wm="a" class="wm-white"></span>'
+            : '<i data-gv="outline" data-f="#FFFFFF"></i>';
+      }
+      h += "</div>";
+    }
+    el.insertAdjacentHTML("afterbegin", h + "</div>");
+  });
+  /* camisetas */
+  $$(".tee[data-tee]").forEach(function (el) {
+    var c = el.dataset.tee,
+      dark = c === "#0B0B0F" || c === "#0305C6",
+      s = dark ? "#FFFFFF" : "#0B0B0F",
+      o = dark ? 0.14 : 0.1;
+    el.insertAdjacentHTML(
+      "afterbegin",
+      '<svg viewBox="0 0 300 330" aria-hidden="true"><path d="M96 18C112 34 188 34 204 18L270 44L298 118L250 138L236 110V318Q236 324 230 324H70Q64 324 64 318V110L50 138L2 118L30 44Z" fill="' +
+        c +
+        '"/><g fill="none" stroke="' +
+        s +
+        '" stroke-opacity="' +
+        o +
+        '" stroke-width="2"><path d="M96 18C108 46 192 46 204 18"/><path d="M72 40Q60 80 64 110M228 40Q240 80 236 110"/><path d="M38 60 58 118M262 60 242 118" stroke-opacity="' +
+        o * 0.6 +
+        '"/></g></svg>',
+    );
+  });
+  /* bottons */
+  var P = [
+    ["#0B0B0F", "#FFFFFF", "sudo me dá um estágio", "mono", "#2E4BFF"],
+    ["#F7F3EA", "#0B0B0F", "vim pelo café, fiquei pelo networking", "", ""],
+    ["#2E4BFF", "#FFFFFF", "404: sono not found", "mono", ""],
+    ["#FFFFFF", "#0B0B0F", "deploy na sexta? jamais", "", "#2E4BFF"],
+    ["#0305C6", "#FFFFFF", "hackathon é meu cardio", "", "#FFFFFF"],
+    ["#F7F3EA", "#0305C6", "ctrl+c no seu contato", "mono", ""],
+    ["#2E4BFF", "#FFFFFF", "primeiro evento: check", "", "#FFFFFF"],
+    ["#0B0B0F", "#FFFFFF", "pergunta que eu explico", "", "#2E4BFF"],
+    ["#FFFFFF", "#2E4BFF", "&lt;salvei a data/&gt;", "mono", ""],
+    ["#0305C6", "#FFFFFF", "funciona na minha máquina", "mono", ""],
+  ];
+  var pins = document.getElementById("pins");
+  if (pins) {
+    pins.innerHTML = P.map(function (p) {
+      var ring = p[4]
+        ? '<svg viewBox="0 0 100 100" aria-hidden="true"><text font-family="JetBrains Mono, monospace" font-size="6.4" font-weight="600" fill="' +
+          p[4] +
+          '" fill-opacity=".85"><textPath href="#ring-s" textLength="252" lengthAdjust="spacing">TECH DATE · TECH DATE · TECH DATE ·</textPath></text></svg>'
+        : "";
+      return (
+        '<figure class="pin"><span class="disc" style="background:' +
+        p[0] +
+        ";color:" +
+        p[1] +
+        (p[0] === "#FFFFFF" || p[0] === "#F7F3EA"
+          ? ";box-shadow:0 14px 22px -10px rgba(11,11,15,.3),inset 0 0 0 1px rgba(11,11,15,.08)"
+          : "") +
+        '">' +
+        ring +
+        '<span class="' +
+        p[3] +
+        '">' +
+        p[2] +
+        "</span></span></figure>"
+      );
+    }).join("");
+  }
+}
+
+/* =============================================================================
+   3. MATRIZ DE VARIAÇÕES
+   ============================================================================= */
+
+function buildMatrix() {
+  var C = [
+    {
+      n: "Primária",
+      d: "Azul sobre Sand",
+      bg: "#F7F3EA",
+      f: "#2E4BFF",
+      badge: "#0305C6",
+      bf: "#FFFFFF",
+      l: 1,
+    },
+    {
+      n: "Clara",
+      d: "Azul sobre Branco",
+      bg: "#FFFFFF",
+      f: "#2E4BFF",
+      badge: "#F7F3EA",
+      bf: "#2E4BFF",
+      l: 1,
+    },
+    { n: "Sóbria", d: "Ink sobre Sand", bg: "#F7F3EA", f: "#0B0B0F", badge: "#0B0B0F", bf: "#FFFFFF", l: 1 },
+    { n: "Negativa", d: "Branco sobre Ink", bg: "#0B0B0F", f: "#FFFFFF", badge: "#FFFFFF", bf: "#2E4BFF" },
+    {
+      n: "Profunda",
+      d: "Branco sobre Azul profundo",
+      bg: "#0305C6",
+      f: "#FFFFFF",
+      badge: "#FFFFFF",
+      bf: "#0305C6",
+    },
+    { n: "Elétrica", d: "Azul sobre Ink", bg: "#0B0B0F", f: "#2E4BFF", badge: "#F7F3EA", bf: "#0B0B0F" },
+  ];
+  var S = [
+    ["outline", "Contorno", "A versão principal: moldura em linha, células a 40% e nó cheio."],
+    ["filled", "Preenchido", "Moldura cheia com recortes. Para carimbo, chaveiro e ícone de app."],
+    ["grid", "Reduzido", "Sem moldura: só a grade e o nó. Para padrões e marca-d’água."],
+    ["circle", "Circular", "Dentro do círculo. Foto de perfil e capas de destaque."],
+    ["square", "Quadrado", "Dentro do quadrado arredondado. Ícone de app e favicon grande."],
+    ["small", "Tamanho pequeno", "Moldura grossa e só o nó, para 16 a 24 px."],
+  ];
+  var t = document.getElementById("matrix");
+  if (!t) return;
+  var h = "<thead><tr><th></th>";
+  C.forEach(function (c) {
+    h +=
+      '<th scope="col"><span class="sw2"><i style="background:' +
+      c.bg +
+      '"></i><i style="background:' +
+      c.f +
+      '"></i></span>' +
+      c.n +
+      '<br><span style="text-transform:none;letter-spacing:0;color:var(--ink-50)">' +
+      c.d +
+      "</span></th>";
+  });
+  h += "</tr></thead><tbody>";
+  S.forEach(function (s) {
+    h += '<tr><th scope="row" class="rowh"><b>' + s[1] + "</b><span>" + s[2] + "</span></th>";
+    C.forEach(function (c) {
+      var a =
+        'data-gv="' +
+        s[0] +
+        '" data-f="' +
+        c.f +
+        '" data-bg="' +
+        c.bg +
+        '" data-badge="' +
+        c.badge +
+        '" data-bf="' +
+        c.bf +
+        '"';
+      var inner = s[0] === "small" ? "<i " + a + '></i><i class="s16" ' + a + "></i>" : "<i " + a + "></i>";
+      h +=
+        '<td><div class="tile' +
+        (s[0] === "small" ? " sm" : "") +
+        (c.l ? " light" : "") +
+        '" style="background:' +
+        c.bg +
+        '" aria-label="' +
+        s[1] +
+        " · " +
+        c.d +
+        '" role="img">' +
+        inner +
+        "</div></td>";
+    });
+    h += "</tr>";
+  });
+  t.innerHTML = h + "</tbody>";
+}
+
+/* =============================================================================
+   4. INTERFACE DO SITE
+   ============================================================================= */
+
+const Site = (() => {
+  "use strict";
+
+  const $ = (sel, root = document) => root.querySelector(sel);
+  const $$ = (sel, root = document) => Array.from(root.querySelectorAll(sel));
+
+  /* ---------------------------------------------------------------------------
+     4.1 Referências da marca
+     Fonte única para tudo que os botões de copiar entregam.
+     --------------------------------------------------------------------------- */
+  const COLORS = [
+    {
+      name: "Azul",
+      slug: "azul",
+      hex: "#2E4BFF",
+      rgb: "46, 75, 255",
+      cmyk: "82 71 0 0",
+      use: "ação, links, botões e nó do ícone",
+    },
+    {
+      name: "Azul profundo",
+      slug: "azul-profundo",
+      hex: "#0305C6",
+      rgb: "3, 5, 198",
+      cmyk: "98 97 0 22",
+      use: "fundos de impacto",
+    },
+    {
+      name: "Ink",
+      slug: "ink",
+      hex: "#0B0B0F",
+      rgb: "11, 11, 15",
+      cmyk: "27 27 0 94",
+      use: "texto principal e fundo escuro",
+    },
+    {
+      name: "Sand",
+      slug: "sand",
+      hex: "#F7F3EA",
+      rgb: "247, 243, 234",
+      cmyk: "0 2 5 3",
+      use: "fundo padrão",
+    },
+    {
+      name: "Branco",
+      slug: "branco",
+      hex: "#FFFFFF",
+      rgb: "255, 255, 255",
+      cmyk: "0 0 0 0",
+      use: "respiro e contraste",
+    },
+  ];
+
+  const FONTS = [
+    {
+      name: "League Spartan",
+      slug: "titulo",
+      use: "títulos e números grandes",
+      stack: '"League Spartan", "Futura", "Avenir Next", sans-serif',
+      query: "League+Spartan:wght@600;700;800",
+    },
+    {
+      name: "Inter",
+      slug: "texto",
+      use: "textos e interface",
+      stack: '"Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif',
+      query: "Inter:wght@400;500;600",
+    },
+    {
+      name: "JetBrains Mono",
+      slug: "dados",
+      use: "tags, datas e dados",
+      stack: '"JetBrains Mono", ui-monospace, Menlo, Consolas, monospace',
+      query: "JetBrains+Mono:wght@400;500;600",
+    },
+  ];
+
+  const fontsUrl = (list = FONTS) =>
+    "https://fonts.googleapis.com/css2?" + list.map((f) => "family=" + f.query).join("&") + "&display=swap";
+
+  const fontsLink = (list = FONTS) =>
+    [
+      '<link rel="preconnect" href="https://fonts.googleapis.com">',
+      '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>',
+      `<link rel="stylesheet" href="${fontsUrl(list)}">`,
+    ].join("\n");
+
+  const pad = (text, size) => text + " ".repeat(Math.max(1, size - text.length));
+
+  const SNIPPETS = {
+    css: () =>
+      [
+        ":root {",
+        "  /* Cores · Tech Date */",
+        ...COLORS.map((c) => `  ${pad(`--td-${c.slug}:`, 21)}${c.hex}; /* ${c.use} */`),
+        `  ${pad("--td-azul-40:", 21)}rgba(46, 75, 255, 0.4); /* células da Grade Viva */`,
+        "",
+        "  /* Fontes */",
+        ...FONTS.map((f) => `  --td-fonte-${f.slug}: ${f.stack};`),
+        "}",
+      ].join("\n"),
+
+    scss: () =>
+      [
+        "// Cores · Tech Date",
+        ...COLORS.map((c) => `${pad(`$td-${c.slug}:`, 19)}${c.hex}; // ${c.use}`),
+        "",
+        "// Fontes",
+        ...FONTS.map((f) => `$td-fonte-${f.slug}: ${f.stack};`),
+      ].join("\n"),
+
+    tailwind: () =>
+      [
+        '/* Tailwind CSS v4 · cole depois de @import "tailwindcss"; */',
+        "@theme {",
+        ...COLORS.map((c) => `  --color-td-${c.slug}: ${c.hex};`),
+        ...FONTS.map((f) => `  --font-${f.slug}: ${f.stack};`),
+        "}",
+        "",
+        '/* Exemplo: <h2 class="bg-td-sand text-td-ink font-titulo"> */',
+      ].join("\n"),
+
+    json: () =>
+      JSON.stringify(
+        {
+          marca: "Tech Date",
+          cores: Object.fromEntries(COLORS.map((c) => [c.slug, c.hex])),
+          fontes: Object.fromEntries(FONTS.map((f) => [f.slug, f.name])),
+        },
+        null,
+        2,
+      ),
+
+    "fonts-link": () => fontsLink(),
+    "fonts-import": () => `@import url("${fontsUrl()}");`,
+    "font-titulo": () => `font-family: ${FONTS[0].stack};`,
+    "font-texto": () => `font-family: ${FONTS[1].stack};`,
+    "font-dados": () => `font-family: ${FONTS[2].stack};`,
+    "symbol-blue": () => svgSymbol("outline", "#2E4BFF"),
+    "symbol-white": () => svgSymbol("outline", "#FFFFFF"),
+    "symbol-ink": () => svgSymbol("outline", "#0B0B0F"),
+    "icons-sprite": () => iconSprite(),
+  };
+
+  /* ---------------------------------------------------------------------------
+     4.2 Arquivos SVG prontos para colar (Figma, Illustrator, código)
+     --------------------------------------------------------------------------- */
+  const XMLNS = 'xmlns="http://www.w3.org/2000/svg"';
+
+  function svgFile(svg, width, height, color) {
+    const out = svg
+      .replace(/\s*aria-hidden="true"/g, "")
+      .replace("<svg ", `<svg ${XMLNS} width="${width}" height="${height}" `);
+    return color ? out.replace(/currentColor/g, color) : out;
+  }
+
+  const svgSymbol = (style, frame, bg, badge, badgeFrame, size = 256) =>
+    svgFile(TD.GV(style, frame, bg, badge, badgeFrame), size, size, frame || "#2E4BFF");
+
+  const svgIcon = (name, color = "#2E4BFF") => svgFile(TD.ico(name), 24, 24, color);
+
+  const svgSquiggle = (name) =>
+    `<svg ${XMLNS} width="240" height="160" viewBox="0 0 240 160" fill="none"><path d="${TD.SQ[name]}" stroke="#2E4BFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
+
+  const slugify = (text) =>
+    text
+      .normalize("NFD")
+      .replace(/[̀-ͯ]/g, "")
+      .toLowerCase()
+      .trim()
+      .replace(/[^a-z0-9]+/g, "-");
+
+  function iconSprite() {
+    const items = $$(".fam li").map((li) => ({
+      name: textOf($("b", li)),
+      icon: $("[data-i]", li).dataset.i,
+    }));
+    return [
+      "<!-- Ícones de categoria Tech Date · cole uma vez no <body> -->",
+      `<svg ${XMLNS} style="display:none">`,
+      ...items.map(
+        (it) =>
+          `  <symbol id="td-${slugify(it.name)}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">${TD.I[it.icon]}</symbol>`,
+      ),
+      "</svg>",
+      "",
+      '<!-- Uso: <svg width="24" height="24" style="color:#2E4BFF"><use href="#td-eventos"/></svg> -->',
+    ].join("\n");
+  }
+
+  function svgGrid() {
+    let cells = "";
+    for (let i = 0; i < 15; i++) {
+      const x = (i % 5) * 24;
+      const y = Math.floor(i / 5) * 24;
+      if (i === 13) {
+        cells += `<circle cx="${x + 9}" cy="${y + 9}" r="9" fill="#2E4BFF"/>`;
+      } else {
+        const faint = [1, 4, 6, 9, 10].includes(i);
+        cells += `<rect x="${x}" y="${y}" width="18" height="18" rx="5" fill="#2E4BFF" fill-opacity="${faint ? 0.09 : 0.4}"/>`;
+      }
+    }
+    return `<svg ${XMLNS} width="114" height="66" viewBox="0 0 114 66">${cells}</svg>`;
+  }
+
+  /* Biblioteca de elementos gráficos (Icon System, seção 05) */
+  const ELEMENTS = {
+    L1: { label: "Copiar SVG", get: () => svgSquiggle("a") },
+    L2: { label: "Copiar SVG", get: () => svgSquiggle("b") },
+    L3: { label: "Copiar SVG", get: () => svgSquiggle("c") },
+    L4: {
+      label: "Copiar SVG",
+      get: () =>
+        `<svg ${XMLNS} width="240" height="24" viewBox="0 0 240 24"><rect x="1" y="5" width="14" height="14" rx="4" fill="#2E4BFF" fill-opacity=".4"/><path d="M15 12H222" stroke="#2E4BFF" stroke-width="1.5"/><circle cx="230" cy="12" r="9" fill="#2E4BFF"/></svg>`,
+    },
+    G1: { label: "Copiar SVG", get: () => svgGrid() },
+    G2: {
+      label: "Copiar CSS",
+      get: () =>
+        [
+          "/* Grade de pontos · só sobre Ink ou Azul profundo */",
+          ".td-pontos {",
+          "  background-color: #0B0B0F;",
+          "  background-image: radial-gradient(rgba(255, 255, 255, 0.28) 1.2px, transparent 1.5px);",
+          "  background-size: 18px 18px;",
+          "}",
+        ].join("\n"),
+    },
+    G3: {
+      label: "Copiar CSS",
+      get: () =>
+        [
+          "/* Calendário do mês: grade de 7 colunas */",
+          '.td-mes { display: grid; grid-template-columns: repeat(7, 1fr); gap: 6px; font: 500 12px/1 "JetBrains Mono", monospace; }',
+          ".td-mes .dia { aspect-ratio: 1; display: grid; place-items: center; border-radius: 24%; background: rgba(46, 75, 255, 0.09); color: rgba(11, 11, 15, 0.72); }",
+          ".td-mes .dia.evento { background: rgba(46, 75, 255, 0.4); color: #0B0B0F; }",
+          ".td-mes .dia.hoje { background: #2E4BFF; color: #FFFFFF; border-radius: 50%; font-weight: 700; }",
+        ].join("\n"),
+    },
+    G4: {
+      label: "Copiar CSS",
+      get: () =>
+        [
+          "/* Moldura de câmera: 4 cantos de 24px com linha de 2px */",
+          ".td-moldura {",
+          "  --c: #2E4BFF;",
+          "  padding: 32px;",
+          "  background:",
+          "    linear-gradient(var(--c), var(--c)) top left / 24px 2px no-repeat,",
+          "    linear-gradient(var(--c), var(--c)) top left / 2px 24px no-repeat,",
+          "    linear-gradient(var(--c), var(--c)) top right / 24px 2px no-repeat,",
+          "    linear-gradient(var(--c), var(--c)) top right / 2px 24px no-repeat,",
+          "    linear-gradient(var(--c), var(--c)) bottom left / 24px 2px no-repeat,",
+          "    linear-gradient(var(--c), var(--c)) bottom left / 2px 24px no-repeat,",
+          "    linear-gradient(var(--c), var(--c)) bottom right / 24px 2px no-repeat,",
+          "    linear-gradient(var(--c), var(--c)) bottom right / 2px 24px no-repeat;",
+          "}",
+        ].join("\n"),
+    },
+    F1: {
+      label: "Copiar CSS",
+      get: () =>
+        [
+          "/* Selo circular: ícone de 24px branco no centro */",
+          ".td-selo { display: inline-grid; place-items: center; width: 64px; height: 64px; border-radius: 50%; background: #2E4BFF; color: #FFFFFF; }",
+          ".td-selo--ink { background: #0B0B0F; }",
+        ].join("\n"),
+    },
+    F2: {
+      label: "Copiar CSS",
+      get: () =>
+        [
+          '.td-tag { display: inline-flex; align-items: center; padding: 7px 11px; border: 1px solid currentColor; border-radius: 99px; font: 500 11px/1 "JetBrains Mono", monospace; letter-spacing: 0.06em; text-transform: uppercase; }',
+          ".td-tag--cheia { background: #2E4BFF; border-color: #2E4BFF; color: #FFFFFF; }",
+        ].join("\n"),
+    },
+    F3: {
+      label: "Copiar CSS",
+      get: () =>
+        [
+          ".td-folha { width: 92px; height: 92px; border-radius: 10px 46px 10px 46px; background: #2E4BFF; }",
+          "/* Atrás do conteúdo, use bem clarinha: background: rgba(46, 75, 255, 0.07); */",
+        ].join("\n"),
+    },
+    F4: { label: "Copiar SVG", get: () => svgIcon("spark") },
+    S1: {
+      label: "Copiar SVG",
+      get: () =>
+        `<svg ${XMLNS} width="64" height="64" viewBox="0 0 64 64"><circle cx="32" cy="32" r="32" fill="#2E4BFF"/><path d="M20 32h24M36 24l8 8-8 8" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>`,
+    },
+    S2: {
+      label: "Copiar SVG",
+      get: () =>
+        `<svg ${XMLNS} width="240" height="32" viewBox="0 0 240 32" fill="none"><path d="M2 16H236M222 4l14 12-14 12" stroke="#2E4BFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>`,
+    },
+    S3: { label: "Copiar SVG", get: () => svgSquiggle("d") },
+    S4: {
+      label: "Copiar HTML e CSS",
+      get: () =>
+        [
+          '<span class="td-colchetes">&lt;<b></b>&gt;</span>',
+          "",
+          '.td-colchetes { display: inline-flex; align-items: center; gap: 12px; font: 700 64px/1 "League Spartan", sans-serif; color: #2E4BFF; }',
+          ".td-colchetes b { width: 22px; height: 22px; border-radius: 50%; background: #2E4BFF; }",
+        ].join("\n"),
+    },
+  };
+
+  /* Escala tipográfica (Brand Book, seção 08), na ordem da tabela */
+  const TYPE_SCALE = [
+    'font-family: "League Spartan", sans-serif;\nfont-weight: 800;\nfont-size: 160px;\nline-height: 136px;\nletter-spacing: -0.03em;',
+    'font-family: "League Spartan", sans-serif;\nfont-weight: 700;\nfont-size: 96px;\nline-height: 90px;\nletter-spacing: -0.025em;',
+    'font-family: "League Spartan", sans-serif;\nfont-weight: 700;\nfont-size: 40px;\nline-height: 40px;\nletter-spacing: -0.015em;',
+    'font-family: "Inter", sans-serif;\nfont-weight: 400;\nfont-size: 16px;\nline-height: 26px;',
+    'font-family: "Inter", sans-serif;\nfont-weight: 500;\nfont-size: 13px;\nline-height: 20px;',
+    'font-family: "JetBrains Mono", monospace;\nfont-weight: 500;\nfont-size: 12px;\nline-height: 16px;\nletter-spacing: 0.08em;\ntext-transform: uppercase;',
+  ];
+
+  /* ---------------------------------------------------------------------------
+     4.3 Copiar para a área de transferência + aviso "Copiado"
+     --------------------------------------------------------------------------- */
+  const COPY = new WeakMap();
+  let toastTimer;
+
+  async function writeClipboard(text) {
+    try {
+      await navigator.clipboard.writeText(text);
+      return true;
+    } catch (err) {
+      const area = document.createElement("textarea");
+      area.value = text;
+      area.setAttribute("readonly", "");
+      area.style.cssText = "position:fixed;top:0;left:0;opacity:0;pointer-events:none";
+      document.body.append(area);
+      area.select();
+      let ok = false;
+      try {
+        ok = document.execCommand("copy");
+      } catch (e) {
+        ok = false;
+      }
+      area.remove();
+      return ok;
+    }
+  }
+
+  function toast(ok, name) {
+    const box = $(".toast");
+    if (!box) return;
+    box.innerHTML = ok
+      ? '<span class="ok"><i data-i="check"></i></span><b>Copiado</b>'
+      : "<b>Não deu para copiar. Selecione o texto e copie manualmente.</b>";
+    if (ok && name) {
+      const detail = document.createElement("span");
+      detail.textContent = name;
+      box.append(detail);
+    }
+    TD.hydrate(box);
+    box.classList.add("is-on");
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(() => box.classList.remove("is-on"), 2200);
+  }
+
+  async function copyFrom(trigger) {
+    const fn = COPY.get(trigger);
+    const key = trigger.dataset.copyKey;
+    const text = fn ? fn() : key && SNIPPETS[key] ? SNIPPETS[key]() : trigger.dataset.copy;
+    if (!text) return;
+    const ok = await writeClipboard(text);
+    toast(ok, trigger.dataset.copyName || text.split("\n")[0].slice(0, 64));
+    if (ok) {
+      trigger.classList.add("is-done");
+      setTimeout(() => trigger.classList.remove("is-done"), 1200);
+    }
+  }
+
+  /* Registra o que um elemento copia (texto fixo ou função) */
+  function onCopy(el, value, name) {
+    el.classList.add("js-copy");
+    COPY.set(el, typeof value === "function" ? value : () => value);
+    if (name) el.dataset.copyName = name;
+    return el;
+  }
+
+  /* Área inteira clicável */
+  function makeCopyable(el, value, name) {
+    if (!el) return null;
+    onCopy(el, value, name);
+    el.classList.add("is-copyable");
+    if (!el.matches("button, a")) {
+      el.tabIndex = 0;
+      if (!el.matches("li, tr")) el.setAttribute("role", "button");
+    }
+    el.setAttribute("aria-label", "Copiar " + (name || ""));
+    el.title = "Clique para copiar";
+    return el;
+  }
+
+  /* Botão com texto */
+  function button(label, value, name, icon = "copy") {
+    const el = document.createElement("button");
+    el.type = "button";
+    el.className = "cpb";
+    el.innerHTML = `<i data-i="${icon}"></i><span></span>`;
+    el.lastChild.textContent = label;
+    return onCopy(el, value, name);
+  }
+
+  const keyButton = (label, key, name) => button(label, () => SNIPPETS[key](), name);
+
+  /* Valor clicável (HEX, RGB…) */
+  function valueButton(shown, value, name) {
+    const el = document.createElement("button");
+    el.type = "button";
+    el.className = "cp";
+    el.innerHTML = '<span></span><i data-i="copy"></i>';
+    el.firstChild.textContent = shown;
+    el.setAttribute("aria-label", "Copiar " + (name || shown));
+    return onCopy(el, value, name || value);
+  }
+
+  function bar(...items) {
+    const el = document.createElement("div");
+    el.className = "cpbar";
+    el.append(...items.filter(Boolean));
+    return el;
+  }
+
+  function barLabel(text) {
+    const el = document.createElement("span");
+    el.className = "cpbar__label";
+    el.textContent = text;
+    return el;
+  }
+
+  function hint(text) {
+    const el = document.createElement("p");
+    el.className = "cp-hint";
+    el.innerHTML = '<i data-i="copy"></i><span></span>';
+    el.lastChild.textContent = text;
+    return el;
+  }
+
+  /* Texto limpo de um elemento (sem ícones nem botões) */
+  const clean = (text) =>
+    text
+      .replace(/[ \t ]+/g, " ")
+      .replace(/ ?\n ?/g, "\n")
+      .replace(/\n{3,}/g, "\n\n")
+      .trim();
+
+  function textOf(el, skip = "") {
+    if (!el) return "";
+    const copy = el.cloneNode(true);
+    copy
+      .querySelectorAll(".cpbar, .cpb, .cp-hint, .ic, svg" + (skip ? ", " + skip : ""))
+      .forEach((n) => n.remove());
+    copy.querySelectorAll("br").forEach((br) => br.replaceWith("\n"));
+    return clean(copy.textContent);
+  }
+
+  /* Texto como aparece na tela (respeita quebras de linha do layout) */
+  const liveText = (el) => (el ? clean(el.innerText) : "");
+
+  function artText(container, skip) {
+    if (!container) return "";
+    return Array.from(container.children)
+      .filter((child) => !child.matches(skip))
+      .map(liveText)
+      .filter(Boolean)
+      .join("\n");
+  }
+
+  function hexIn(style) {
+    const match = (style || "").match(/#([0-9a-f]{6}|[0-9a-f]{3})\b/i);
+    if (!match) return null;
+    const hex = match[1].length === 3 ? match[1].replace(/./g, "$&$&") : match[1];
+    return "#" + hex.toUpperCase();
+  }
+
+  /* ---------------------------------------------------------------------------
+     4.4 Onde ficam os botões e as áreas de copiar
+     Cada função só age se a parte correspondente existir na página.
+     --------------------------------------------------------------------------- */
+  function enhance() {
+    [
+      sectionLinks,
+      keyTexts,
+      lists,
+      toneOfVoice,
+      logoBackgrounds,
+      colors,
+      typography,
+      symbolButtons,
+      posts,
+      stories,
+      highlights,
+      feedBio,
+      ambassadors,
+      badges,
+      merch,
+      iconCover,
+      matrix,
+      family,
+      combos,
+      library,
+      applications,
+    ].forEach((step) => step());
+  }
+
+  /* Link direto para cada seção (ao lado do número) */
+  function sectionLinks() {
+    $$(".sh .eyebrow").forEach((eyebrow) => {
+      const section = eyebrow.closest("section[id]");
+      if (!section) return;
+      const el = document.createElement("button");
+      el.type = "button";
+      el.className = "sec-link";
+      el.innerHTML = '<i data-i="link"></i>';
+      el.title = "Copiar link desta seção";
+      el.setAttribute("aria-label", "Copiar link desta seção");
+      eyebrow.append(onCopy(el, () => location.href.split("#")[0] + "#" + section.id, "link da seção"));
+    });
+  }
+
+  /* Brand Book · frases de estratégia */
+  function keyTexts() {
+    [
+      [".statement", "Copiar propósito", (el) => textOf(el)],
+      [".pm .mission .big", "Copiar missão", (el) => textOf(el)],
+      ["#valores .vision", "Copiar visão", (el) => textOf(el)],
+      ["#posicionamento .pos-st", "Copiar posicionamento", (el) => "Para " + textOf(el, "small")],
+      [".persona q", "Copiar frase", (el) => textOf(el)],
+    ].forEach(([selector, label, read]) => {
+      const el = $(selector);
+      if (el) el.after(bar(button(label, () => read(el), label.replace("Copiar ", ""))));
+    });
+  }
+
+  function lists() {
+    const listText = (box) =>
+      textOf($(".h4", box)) +
+      "\n" +
+      $$("li", box)
+        .map((li) => "- " + textOf(li))
+        .join("\n");
+
+    const values = $(".values");
+    if (values) {
+      values.after(
+        bar(
+          button(
+            "Copiar valores",
+            () =>
+              $$("li", values)
+                .map((li) => `${textOf($("b", li))}: ${textOf($("p", li))}`)
+                .join("\n"),
+            "valores",
+          ),
+        ),
+      );
+    }
+    $$(".isnot > div").forEach((box) =>
+      box.append(bar(button("Copiar lista", () => listText(box), textOf($(".h4", box))))),
+    );
+    $$(".pn > div").forEach((box) =>
+      box.append(bar(button("Copiar regras", () => listText(box), textOf($(".h4", box))))),
+    );
+  }
+
+  function toneOfVoice() {
+    $$(".pr4 .ex").forEach((el) =>
+      makeCopyable(el, () => textOf(el).replace(/[“”"]/g, ""), "exemplo de tom de voz"),
+    );
+    $$(".dd .ok, .channels .say").forEach((el) =>
+      makeCopyable(el, () => textOf(el), "exemplo de tom de voz"),
+    );
+    $$(".words .list span").forEach((el) => makeCopyable(el, () => textOf(el), textOf(el)));
+    const examples = $(".dodont");
+    if (examples) examples.after(hint("Clique num exemplo em branco (ou numa palavra) para copiar o texto."));
+  }
+
+  /* Brand Book · logo em cada fundo */
+  function logoBackgrounds() {
+    const PAIRS = {
+      "bgt--sand": ["#F7F3EA", "#2E4BFF"],
+      "bgt--white": ["#FFFFFF", "#2E4BFF"],
+      "bgt--ink": ["#0B0B0F", "#FFFFFF"],
+      "bgt--deep": ["#0305C6", "#FFFFFF"],
+    };
+    $$(".bgt").forEach((tile) => {
+      const key = Object.keys(PAIRS).find((k) => tile.classList.contains(k));
+      if (!key) return;
+      const [bg, fg] = PAIRS[key];
+      const info = $(".lab > div", tile);
+      if (info) {
+        const chips = document.createElement("div");
+        chips.className = "cpchips";
+        chips.append(
+          valueButton("Fundo " + bg, bg, "fundo " + bg),
+          valueButton("Logo " + fg, fg, "logo " + fg),
+        );
+        info.append(chips);
+      }
+      makeCopyable($(".lab [data-gv]", tile), () => svgSymbol("outline", fg), "SVG do símbolo " + fg);
+    });
+  }
+
+  /* Brand Book · paleta */
+  function colors() {
+    const cards = $$(".sw5 .sw");
+    if (!cards.length) return;
+
+    cards.forEach((card, i) => {
+      const c = COLORS[i];
+      if (!c) return;
+      const chip = makeCopyable($(".chipc", card), c.hex, `${c.name} ${c.hex}`);
+      if (chip) chip.classList.add("is-copyable--inset");
+
+      const values = [c.hex, `rgb(${c.rgb})`, c.cmyk];
+      $$("dl > dd:not(.role)", card).forEach((dd, j) => {
+        const shown = dd.textContent.trim();
+        dd.textContent = "";
+        dd.append(valueButton(shown, values[j] || shown, `${c.name} ${values[j] || shown}`));
+      });
+
+      const role = $("dd.role", card);
+      if (role) {
+        const dt = document.createElement("dt");
+        dt.textContent = "CSS";
+        const dd = document.createElement("dd");
+        dd.append(valueButton(`--td-${c.slug}`, `var(--td-${c.slug})`, `var(--td-${c.slug})`));
+        role.before(dt, dd);
+      }
+    });
+
+    const note = $(".sw5").nextElementSibling || $(".sw5");
+    note.after(
+      bar(
+        barLabel("Copiar a paleta como"),
+        keyButton("CSS", "css", "variáveis CSS"),
+        keyButton("SCSS", "scss", "variáveis SCSS"),
+        keyButton("Tailwind v4", "tailwind", "tema Tailwind"),
+        keyButton("JSON", "json", "tokens JSON"),
+      ),
+    );
+
+    $$(".contrast li").forEach((li) => {
+      if ($(".v-no", li)) return;
+      const style = ($(".aa", li) || li).getAttribute("style") || "";
+      const bg = hexIn((style.match(/background:\s*[^;]+/) || [])[0]);
+      const fg = hexIn((style.match(/(?:^|;)\s*color:\s*[^;]+/) || [])[0]);
+      if (bg && fg) makeCopyable(li, `color: ${fg};\nbackground-color: ${bg};`, textOf($("b", li)));
+    });
+    const contrast = $(".contrast");
+    if (contrast) contrast.after(hint("Clique numa combinação para copiar o CSS (cor do texto e do fundo)."));
+  }
+
+  /* Brand Book · tipografia */
+  function typography() {
+    const cards = $$(".fonts .font");
+    if (!cards.length) return;
+
+    cards.forEach((card, i) => {
+      const f = FONTS[i];
+      if (!f) return;
+      card.append(
+        bar(
+          button("CSS da fonte", `font-family: ${f.stack};`, `font-family ${f.name}`),
+          button("Link Google Fonts", () => fontsLink([f]), `link ${f.name}`),
+        ),
+      );
+    });
+
+    $(".fonts").after(
+      bar(
+        barLabel("As 3 fontes juntas"),
+        keyButton("<link> para HTML", "fonts-link", "link das 3 fontes"),
+        keyButton("@import para CSS", "fonts-import", "@import das fontes"),
+        keyButton("Variáveis CSS", "css", "variáveis CSS"),
+      ),
+    );
+
+    $$(".scale tbody tr").forEach((tr, i) => {
+      if (TYPE_SCALE[i]) makeCopyable(tr, TYPE_SCALE[i], "CSS · " + textOf(tr.cells[0]));
+    });
+    const table = $(".scale");
+    if (table)
+      table.closest(".scroll-x").after(hint("Clique numa linha da tabela para copiar o CSS do estilo."));
+  }
+
+  /* Brand Book · ícone */
+  function symbolButtons() {
+    const anatomy = $("#icone .anat");
+    if (!anatomy) return;
+    anatomy.after(
+      bar(
+        barLabel("SVG do símbolo"),
+        keyButton("Azul", "symbol-blue", "SVG do símbolo azul"),
+        keyButton("Branco", "symbol-white", "SVG do símbolo branco"),
+        keyButton("Ink", "symbol-ink", "SVG do símbolo ink"),
+      ),
+    );
+  }
+
+  /* Brand Book · posts */
+  function posts() {
+    const captionText = (cap) => {
+      const body = Array.from(cap.children).find(
+        (child) => !child.matches(".ty, .hs, .cpbar") && child.querySelector("b"),
+      );
+      const text = body ? textOf(body, "b") : textOf(cap, ".ty, .hs, b");
+      const tags = $(".hs", cap);
+      return tags ? `${text}\n\n${textOf(tags)}` : text;
+    };
+
+    $$("#posts figure.post").forEach((figure) => {
+      const art = $(".ig .in", figure);
+      const cap = $("figcaption", figure);
+      if (!cap) return;
+      cap.append(
+        bar(
+          button("Legenda", () => captionText(cap), "legenda"),
+          art && button("Textos da arte", () => artText(art, ".top, .bot"), "textos da arte"),
+        ),
+      );
+    });
+
+    const carousel = $(".car-wrap");
+    if (carousel) {
+      const cap = $("figcaption", carousel);
+      $(".car-head", carousel).append(
+        bar(
+          button("Legenda", () => captionText(cap), "legenda do carrossel"),
+          button(
+            "Textos dos 5 cards",
+            () =>
+              $$(".carousel .ig .in", carousel)
+                .map((card, i) => `Card ${i + 1}\n${artText(card, ".top, .bot")}`)
+                .join("\n\n"),
+            "textos dos cards",
+          ),
+        ),
+      );
+    }
+  }
+
+  /* Brand Book · stories */
+  function stories() {
+    $$("#stories figure.story").forEach((figure) => {
+      const body = $(".sbody", figure);
+      const cap = $("figcaption", figure);
+      if (body && cap)
+        cap.append(
+          bar(button("Textos do story", () => artText(body, ".seal, .avt2, .sq"), "textos do story")),
+        );
+    });
+  }
+
+  function highlights() {
+    const row = $("#destaques .hl-row");
+    if (row)
+      row.after(
+        bar(
+          button(
+            "Nomes dos destaques",
+            () =>
+              $$(".hl", row)
+                .map((h) => textOf(h))
+                .join("\n"),
+            "nomes dos destaques",
+          ),
+        ),
+      );
+  }
+
+  function feedBio() {
+    const bio = $(".pf-bio");
+    if (bio)
+      bio.after(
+        bar(button("Copiar bio", () => textOf(bio).split("\n").slice(1).join("\n"), "bio do Instagram")),
+      );
+  }
+
+  /* Brand Book · embaixadores */
+  function ambassadors() {
+    const signature = $(".sig > div");
+    if (!signature) return;
+    signature.append(
+      bar(
+        button(
+          "Copiar assinatura",
+          () =>
+            [
+              textOf($("b", signature)),
+              textOf($(":scope > span", signature)),
+              ...$$(".l span", signature).map((s) => textOf(s)),
+            ].join("\n"),
+          "assinatura de e-mail",
+        ),
+      ),
+    );
+  }
+
+  /* Brand Book · crachás */
+  function badges() {
+    $$(".brole").forEach((row) => {
+      const front = $("figure .badge .in", row);
+      const desc = $(".bdesc", row);
+      if (front && desc)
+        desc.append(bar(button("Textos do crachá", () => artText(front, ".brow"), "textos do crachá")));
+    });
+  }
+
+  /* Brand Book · merchandising */
+  function merch() {
+    $$(".teec").forEach((card) => {
+      const art = $(".print", card);
+      const info = $(".info", card);
+      if (art && info) info.append(bar(button("Texto da arte", () => liveText(art), "texto da camiseta")));
+    });
+
+    $$(".pin .disc").forEach((disc) => {
+      const phrase = $(":scope > span", disc);
+      if (phrase) makeCopyable(disc, () => textOf(phrase), textOf(phrase));
+    });
+    const pins = $("#pins");
+    if (pins) pins.after(hint("Clique num botton para copiar a frase."));
+
+    [
+      [".bag .pr b", "Copiar frase"],
+      [".nb .txt", "Copiar frase"],
+      [".bottle .vt", "Copiar frase"],
+      [".cards2 .bcard:last-child .in", "Textos do cartão"],
+    ].forEach(([selector, label]) => {
+      const el = $(selector);
+      const info = el && $(".info", el.closest(".obj"));
+      if (info) info.append(bar(button(label, () => liveText(el), label.toLowerCase())));
+    });
+  }
+
+  /* Icon System · capa */
+  function iconCover() {
+    const back = $(".icover .back");
+    if (!back) return;
+    back.after(
+      bar(
+        barLabel("SVG do símbolo"),
+        keyButton("Branco", "symbol-white", "SVG do símbolo branco"),
+        keyButton("Azul", "symbol-blue", "SVG do símbolo azul"),
+      ),
+    );
+  }
+
+  /* Icon System · matriz de variações */
+  function matrix() {
+    const table = $("#matrix");
+    if (!table) return;
+    $$(".tile", table).forEach((tile) => {
+      const icon = $("[data-gv]", tile);
+      if (!icon) return;
+      const d = icon.dataset;
+      const small = tile.classList.contains("sm");
+      const name = "SVG · " + (tile.getAttribute("aria-label") || "");
+      tile.removeAttribute("role");
+      makeCopyable(tile, () => svgSymbol(d.gv, d.f, d.bg, d.badge, d.bf, small ? 24 : 256), name);
+    });
+    $$("th .sw2 i", table).forEach((swatch) => {
+      const hex = hexIn(swatch.getAttribute("style"));
+      if (hex) makeCopyable(swatch, hex, hex);
+    });
+    table
+      .closest(".fig-scroll")
+      .after(
+        hint("Clique em qualquer versão para copiar o SVG, ou nos quadradinhos de cor para copiar o HEX."),
+      );
+  }
+
+  /* Icon System · família de ícones */
+  function family() {
+    const list = $(".fam");
+    if (!list) return;
+    $$("li", list).forEach((li) => {
+      const icon = $("[data-i]", li);
+      const name = textOf($("b", li));
+      if (icon) makeCopyable($(".seal", li), () => svgIcon(icon.dataset.i), "SVG · " + name);
+    });
+    list.after(
+      bar(keyButton("Sprite SVG com os 12 ícones", "icons-sprite", "sprite SVG dos ícones")),
+      hint("Clique num ícone para copiar o SVG dele (24 px, traço 1,8, azul)."),
+    );
+  }
+
+  /* Icon System · combinações aprovadas */
+  function combos() {
+    const PAIRS = [
+      ["#F7F3EA", "#2E4BFF"],
+      ["#FFFFFF", "#2E4BFF"],
+      ["#0B0B0F", "#FFFFFF"],
+      ["#0305C6", "#FFFFFF"],
+      ["#0B0B0F", "#2E4BFF"],
+      ["#F7F3EA", "#0B0B0F"],
+    ];
+    $$(".combos .combo.ok").forEach((combo, i) => {
+      const pair = PAIRS[i];
+      if (pair)
+        makeCopyable(
+          $(".stage", combo),
+          `Fundo ${pair[0]} · Símbolo ${pair[1]}`,
+          `fundo ${pair[0]} + símbolo ${pair[1]}`,
+        );
+    });
+    const grid = $(".combos");
+    if (grid) grid.after(hint("Clique numa combinação aprovada para copiar as cores."));
+  }
+
+  /* Icon System · biblioteca de elementos */
+  function library() {
+    $$(".lib .el").forEach((card) => {
+      const id = textOf($(".id", card));
+      const item = ELEMENTS[id];
+      if (!item) return;
+      card.id = "el-" + id;
+      $(".tx", card).append(bar(button(item.label, item.get, `${id} · ${textOf($(".tx b", card))}`)));
+    });
+  }
+
+  /* Icon System · códigos das aplicações levam ao elemento */
+  function applications() {
+    $$(".app-c .used span").forEach((span) => {
+      const id = span.textContent.trim();
+      const link = document.createElement("a");
+      link.href = "#el-" + id;
+      link.textContent = id;
+      link.title = "Ver o elemento " + id;
+      span.replaceWith(link);
+    });
+  }
+
+  /* ---------------------------------------------------------------------------
+     4.5 Menu de seções e seção ativa
+     --------------------------------------------------------------------------- */
+  const wide = window.matchMedia("(min-width: 1440px)");
+
+  function initMenu() {
+    const toc = $("#toc");
+    const toggle = $(".menu-btn");
+    const overlay = $(".toc__overlay");
+    const close = $(".toc__close");
+    if (!toc || !toggle) return;
+
+    const open = () => {
+      toc.classList.add("is-open");
+      if (overlay) overlay.hidden = false;
+      toggle.setAttribute("aria-expanded", "true");
+      document.documentElement.classList.add("is-locked");
+      setTimeout(() => close && close.focus(), 60);
+    };
+
+    const shut = (returnFocus = true) => {
+      if (!toc.classList.contains("is-open")) return;
+      toc.classList.remove("is-open");
+      if (overlay) overlay.hidden = true;
+      toggle.setAttribute("aria-expanded", "false");
+      document.documentElement.classList.remove("is-locked");
+      if (returnFocus) toggle.focus();
+    };
+
+    toggle.addEventListener("click", () => (toc.classList.contains("is-open") ? shut() : open()));
+    if (close) close.addEventListener("click", () => shut());
+    if (overlay) overlay.addEventListener("click", () => shut());
+    document.addEventListener("keydown", (e) => e.key === "Escape" && shut());
+    toc.addEventListener("click", (e) => {
+      if (e.target.closest('a[href^="#"]') && !wide.matches) shut(false);
+    });
+    wide.addEventListener("change", () => shut(false));
+  }
+
+  function initActiveSection() {
+    const links = $$('.toc__nav a[href^="#"]');
+    const now = $(".topbar__now");
+    const scroller = $(".toc__scroll");
+    if (!links.length || !("IntersectionObserver" in window)) return;
+
+    const byId = new Map(links.map((a) => [a.getAttribute("href").slice(1), a]));
+    let current = "";
+
+    const setActive = (id) => {
+      const link = byId.get(id);
+      if (!link || id === current) return;
+      current = id;
+      links.forEach((a) => {
+        const on = a === link;
+        a.classList.toggle("is-active", on);
+        if (on) a.setAttribute("aria-current", "location");
+        else a.removeAttribute("aria-current");
+      });
+      if (now) now.innerHTML = link.innerHTML;
+      if (scroller && wide.matches) {
+        const r = link.getBoundingClientRect();
+        const box = scroller.getBoundingClientRect();
+        if (r.top < box.top + 40 || r.bottom > box.bottom - 40) {
+          scroller.scrollTop += r.top - box.top - box.height / 2;
+        }
+      }
+    };
+
+    const observer = new IntersectionObserver(
+      (entries) => entries.forEach((entry) => entry.isIntersecting && setActive(entry.target.id)),
+      { rootMargin: "-30% 0px -65% 0px" },
+    );
+    byId.forEach((_, id) => {
+      const section = document.getElementById(id);
+      if (section) observer.observe(section);
+    });
+    setActive(links[0].getAttribute("href").slice(1));
+  }
+
+  /* ---------------------------------------------------------------------------
+     4.6 Ligar tudo
+     --------------------------------------------------------------------------- */
+  function init() {
+    document.addEventListener("click", (e) => {
+      const trigger = e.target.closest(".js-copy");
+      if (!trigger) return;
+      e.preventDefault();
+      copyFrom(trigger);
+    });
+
+    document.addEventListener("keydown", (e) => {
+      if (e.key !== "Enter" && e.key !== " ") return;
+      const trigger = e.target.closest && e.target.closest(".js-copy");
+      if (!trigger || trigger !== e.target || trigger.matches("button, a")) return;
+      e.preventDefault();
+      copyFrom(trigger);
+    });
+
+    initMenu();
+    initActiveSection();
+  }
+
+  return { enhance, init, COLORS, FONTS, SNIPPETS };
+})();
+
+/* =============================================================================
+   5. INICIALIZAÇÃO
+   ============================================================================= */
+
+buildPieces(); // peças: calendários, celulares, camisetas, bottons…
+buildMatrix(); // tabela 6 × 6 de variações do símbolo
+Site.enhance(); // botões e áreas de copiar
+TD.hydrate(document); // desenha ícones, símbolo, rabiscos, logo e QR
+Site.init(); // copiar, menu e seção ativa
+
+  </script>
+</body>
+</html>
